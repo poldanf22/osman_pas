@@ -38,10 +38,303 @@ if authentication_status:
                 f'''<a href={url}><button style="background-color:GreenYellow;">Untuk Lok.</button></a>''', unsafe_allow_html=True)
         selected_file = option_menu(
             menu_title="Pilih file:",
-            options=["Pivot", "Nilai Std. SD, SMP, 10KM", "Nilai Std. All IPA",
+            options=["Pivot PAS/SAS Sm1", "Nilai Std. SD, SMP, 10KM", "Nilai Std. All IPA",
                      "Nilai Std. 10, 11 IPS", "Nilai Std. PPLS, RONIN IPS", "Nilai Std. 11KM"],
         )
-    if selected_file == "Pivot":
+    if selected_file == "Pivot PAS/SAS Sm1":
+        # kurikulum - kelas - mapel
+        # 4sd k13
+        k13_4sd_mat = 'L9QDEBOG'
+        k13_4sd_ind = 'L9QDN296'
+        k13_4sd_eng = 'L9QDPSOV'
+        k13_4sd_ipa = 'L9QDR0MB'
+        k13_4sd_ips = 'L9QDTU4F'
+        k13_4sd = [k13_4sd_mat, k13_4sd_ind,
+                   k13_4sd_eng, k13_4sd_ipa, k13_4sd_ips]
+        column_order_k13_4sd = ['IDTAHUN', 'NAMA', 'NONF', 'KELAS', 'NAMA_SKLH', 'KD_LOK', 'MAT_4SD', 'IND_4SD',
+                                'ENG_4SD', 'IPA_4SD', 'IPS_4SD']
+
+        # 4sd km
+        km_4sd_mat = 'L9QM7CXT'
+        km_4sd_ind = 'L9QM92BE'
+        km_4sd_eng = 'L9QMB382'
+        km_4sd_ipas = 'L9QMC1VY'
+        km_4sd = [km_4sd_mat, km_4sd_ind, km_4sd_eng, km_4sd_ipas]
+        column_order_km_4sd = ['IDTAHUN', 'NAMA', 'NONF', 'KELAS', 'NAMA_SKLH', 'KD_LOK', 'MAT_4KM', 'IND_4KM',
+                               'ENG_4KM', 'IPAS_4KM']
+
+        # 5sd k13
+        k13_5sd_mat = 'L9QO1SVL'
+        k13_5sd_ind = 'L9QO7IZ0'
+        k13_5sd_ipa = 'L9QODV90'
+        k13_5sd_ips = 'L9QOFGPQ'
+        k13_5sd = [k13_5sd_mat, k13_5sd_ind,
+                   k13_5sd_ipa, k13_5sd_ips]
+        column_order_k13_5sd = ['IDTAHUN', 'NAMA', 'NONF', 'KELAS', 'NAMA_SKLH', 'KD_LOK', 'MAT_5SD', 'IND_5SD',
+                                'IPA_5SD', 'IPS_5SD']
+
+        # 6sd k13
+        k13_6sd_mat = 'L9RTIN0I'
+        k13_6sd_ind = 'L9RTK7OI'
+        k13_6sd_eng = 'L9RTZ866'
+        k13_6sd_ipa = 'L9RU3QPK'
+        k13_6sd_ips = 'L9RU68E6'
+        k13_6sd = [k13_6sd_mat, k13_6sd_ind,
+                   k13_6sd_eng, k13_6sd_ipa, k13_6sd_ips]
+        column_order_k13_6sd = ['IDTAHUN', 'NAMA', 'NONF', 'KELAS', 'NAMA_SKLH', 'KD_LOK', 'MAT_6SD', 'IND_6SD',
+                                'ENG_6SD', 'IPA_6SD', 'IPS_6SD']
+
+        # 7smp k13
+        k13_7smp_mat = 'L9S0GWBA'
+        k13_7smp_ind = 'L9S0I3KJ'
+        k13_7smp_eng = 'L9S0JWQ7'
+        k13_7smp_ipa = 'L9S0RALP'
+        k13_7smp_ips = 'L9S0T6ZB'
+        k13_7smp = [k13_7smp_mat, k13_7smp_ind,
+                    k13_7smp_eng, k13_7smp_ipa, k13_7smp_ips]
+        column_order_k13_7smp = ['IDTAHUN', 'NAMA', 'NONF', 'KELAS', 'NAMA_SKLH', 'KD_LOK', 'MAT_7SMP', 'IND_7SMP',
+                                 'ENG_7SMP', 'IPA_7SMP', 'IPS_7SMP']
+
+        # 7smp km
+        km_7smp_mat = 'L9S23TZT'
+        km_7smp_ind = 'L9S25VBP'
+        km_7smp_eng = 'L9S29Q7F'
+        km_7smp_ipa = 'L9S2B5X0'
+        km_7smp_ips = 'L9S2L61D'
+        km_7smp = [km_7smp_mat, km_7smp_ind,
+                   km_7smp_eng, km_7smp_ipa, km_7smp_ips]
+        column_order_km_7smp = ['IDTAHUN', 'NAMA', 'NONF', 'KELAS', 'NAMA_SKLH', 'KD_LOK', 'MAT_7KM', 'IND_7KM',
+                                'ENG_7KM', 'IPA_7KM', 'IPS_7KM']
+
+        # 8smp k13
+        k13_8smp_mat = 'L9SCVUO7'
+        k13_8smp_ind = 'L9SDDA9Y'
+        k13_8smp_eng = 'L9SEQUFL'
+        k13_8smp_ipa = 'L9SF4AIK'
+        k13_8smp_ips = 'L9SFJCOV'
+        k13_8smp = [k13_8smp_mat, k13_8smp_ind,
+                    k13_8smp_eng, k13_8smp_ipa, k13_8smp_ips]
+        column_order_k13_8smp = ['IDTAHUN', 'NAMA', 'NONF', 'KELAS', 'NAMA_SKLH', 'KD_LOK', 'MAT_8SMP', 'IND_8SMP',
+                                 'ENG_8SMP', 'IPA_8SMP', 'IPS_8SMP']
+
+        # 9smp k13
+        k13_9smp_mat = 'L9TFA2OM'
+        k13_9smp_ind = 'L9TFIGFW'
+        k13_9smp_eng = 'L9TFMTCY'
+        k13_9smp_ipa = 'L9TFOLX9'
+        k13_9smp_ips = 'L9TFPLR0'
+        k13_9smp = [k13_9smp_mat, k13_9smp_ind,
+                    k13_9smp_eng, k13_9smp_ipa, k13_9smp_ips]
+        column_order_k13_9smp = ['IDTAHUN', 'NAMA', 'NONF', 'KELAS', 'NAMA_SKLH', 'KD_LOK', 'MAT_9SMP', 'IND_9SMP',
+                                 'ENG_9SMP', 'IPA_9SMP', 'IPS_9SMP']
+
+        # 10sma ipa k13
+        k13_10ipa_mat = 'L9W9LKWO'
+        k13_10ipa_bio = 'L9W5BU0N'
+        k13_10ipa_fis = 'L9W5R2GE'
+        k13_10ipa_kim = 'L9W5TEF3'
+        k13_10ipa = [k13_10ipa_mat, k13_10ipa_bio,
+                     k13_10ipa_fis, k13_10ipa_kim]
+        column_order_k13_10ipa = ['IDTAHUN', 'NAMA', 'NONF', 'KELAS', 'NAMA_SKLH', 'KD_LOK', 'MAT_10IPA', 'FIS_10IPA',
+                                  'KIM_10IPA', 'BIO_10IPA']
+
+        # 10sma ips k13
+        k13_10ips_mat = 'L9W29MFV'
+        k13_10ips_sos = 'L9W2PTDI'
+        k13_10ips_eng = 'L9W4T0HB'
+        k13_10ips_eko = 'L9W5HFLP'
+        k13_10ips_ind = 'L9W3ARNP'
+        k13_10ips_sej = 'L9W3DYM4'
+        k13_10ips_geo = 'L9W55RF5'
+        k13_10ips = [k13_10ips_mat, k13_10ips_sos, k13_10ips_eng,
+                     k13_10ips_eko, k13_10ips_ind, k13_10ips_sej, k13_10ips_geo]
+        column_order_k13_10ips = ['IDTAHUN', 'NAMA', 'NONF', 'KELAS', 'NAMA_SKLH', 'KD_LOK', 'MAT_10IPS', 'IND_10IPS',
+                                  'ENG_10IPS', 'SEJ_10IPS', 'GEO_10IPS', 'EKO_10IPS', 'SOS_10IPS']
+
+        # 10sma km
+        km_10sma_mat = 'L9W68CVB'
+        km_10sma_ind = 'LADJHJKV'
+        km_10sma_eng = 'LADJDN8W'
+        km_10sma_ipa = 'L9W79KVQ'
+        km_10sma = [km_10sma_mat, km_10sma_ind,
+                    km_10sma_eng, km_10sma_ipa]
+        column_order_km_10sma = ['IDTAHUN', 'NAMA', 'NONF', 'KELAS', 'NAMA_SKLH', 'KD_LOK', 'MAT_10KM', 'IND_10KM',
+                                 'ENG_10KM', 'IPA_10KM']
+
+        # 11sma ipa k13
+        k13_11ipa_mat = 'L9W5YBZA'
+        k13_11ipa_bio = 'L9W7DUG4'
+        k13_11ipa_fis = 'L9W7OZR3'
+        k13_11ipa_kim = 'L9W8IP45'
+        k13_11ipa = [k13_11ipa_mat, k13_11ipa_bio,
+                     k13_11ipa_fis, k13_11ipa_kim]
+        column_order_k13_11ipa = ['IDTAHUN', 'NAMA', 'NONF', 'KELAS', 'NAMA_SKLH', 'KD_LOK', 'MAT_11IPA', 'FIS_11IPA',
+                                  'KIM_11IPA', 'BIO_11IPA']
+
+        # 11sma ips k13
+        k13_11ips_mat = 'L9W7P7DY'
+        k13_11ips_sos = 'L9WGOT8D'
+        k13_11ips_eng = 'L9W9S6O2'
+        k13_11ips_eko = 'L9WG7JI0'
+        k13_11ips_ind = 'L9W9F1TU'
+        k13_11ips_sej = 'L9WA45A3'
+        k13_11ips_geo = 'L9WFT052'
+        k13_11ips = [k13_11ips_mat, k13_11ips_sos, k13_11ips_eng,
+                     k13_11ips_eko, k13_11ips_ind, k13_11ips_sej, k13_11ips_geo]
+        column_order_k13_11ips = ['IDTAHUN', 'NAMA', 'NONF', 'KELAS', 'NAMA_SKLH', 'KD_LOK', 'MAT_11IPS', 'IND_11IPS',
+                                  'ENG_11IPS', 'SEJ_11IPS', 'GEO_11IPS', 'EKO_11IPS', 'SOS_11IPS']
+
+        # ppls ipa k13
+        k13_pplsipa_mat = 'L9W5YBZA'
+        k13_pplsipa_bio = 'L9W7DUG4'
+        k13_pplsipa_fis = 'L9W7OZR3'
+        k13_pplsipa_kim = 'L9W8IP45'
+        k13_pplsipa = [k13_pplsipa_mat, k13_pplsipa_bio,
+                       k13_pplsipa_fis, k13_pplsipa_kim]
+        column_order_k13_pplsipa = ['IDTAHUN', 'NAMA', 'NONF', 'KELAS', 'NAMA_SKLH', 'KD_LOK', 'MAT_PPLSIPA', 'FIS_PPLSIPA',
+                                    'KIM_PPLSIPA', 'BIO_PPLSIPA']
+
+        # ppls ips k13
+        k13_pplsips_mat = 'LADYWD3B'
+        k13_pplsips_sej = 'L9XX80UB'
+        k13_pplsips_geo = 'L9XX8YW7'
+        k13_pplsips_eko = 'L9XXB61J'
+        k13_pplsips_sos = 'L9XXDA0R'
+        k13_pplsips = [k13_pplsips_mat, k13_pplsips_sej,
+                       k13_pplsips_geo, k13_pplsips_eko, k13_pplsips_sos]
+        column_order_k13_pplsips = ['IDTAHUN', 'NAMA', 'NONF', 'KELAS', 'NAMA_SKLH', 'KD_LOK', 'MAT_PPLSIPS', 'SEJ_PPLSIPS',
+                                    'GEO_PPLSIPS', 'EKO_PPLSIPS', 'SOS_PPLSIPS']
+
+        image = Image.open('logo resmi nf resize.png')
+        st.image(image)
+
+        st.title("PIVOT - PAT")
+
+        col1 = st.container()
+        with col1:
+            KURIKULUM = st.selectbox(
+                "KURIKULUM",
+                ("--Pilih Kurikulum--", "K13", "KM"))
+
+        col2 = st.container()
+        with col2:
+            KELAS = st.selectbox(
+                "KELAS",
+                ("--Pilih Kelas--", "4 SD", "5 SD", "7 SMP", "8 SMP", "10 IPA", "10 IPS", "10 SMA", "11 IPA", "11 IPS", "11 SMA"))
+
+        TAHUN = st.text_input("Masukkan Tahun Ajaran",
+                              placeholder="contoh: 2022-2023")
+
+        uploaded_bobot = st.file_uploader(
+            'Letakkan file excel bobot TO', type='xlsx')
+        uploaded_jwb = st.file_uploader(
+            'Letakkan file excel jwb TO', type='xlsx')
+
+        bobot = None
+        jwb = None
+
+        if uploaded_bobot is not None:
+            bobot = pd.read_excel(uploaded_bobot)
+
+        if uploaded_jwb is not None:
+            jwb = pd.read_excel(uploaded_jwb)
+
+        if bobot is not None and jwb is not None:
+            bobot = bobot.drop(['id', 'jns_pkt', 'jns_tes', 'kel_studi', 'nama_tes', 'no_soal', 'bobot', 'kd_studi', 'bab', 'eigen', 'kode_soal', 'st_eigen',
+                                'modified_time', 'kode_naskah', 'group_tes', 'kunci', 'sequence', 'label', 'item_id'], axis=1)  # Menghilangkan kolom sebelum dilakukan merge
+
+            result = pd.merge(bobot, jwb[['kode', 'nama', 'nonf', 'kd_lok',
+                                          'nama_sklh', 'kelas', 'jml_benar']], on='kode', how='left')
+            # Menghapus nilai NaN dari kolom 'nonf'
+            result = result.dropna(subset=['nonf'])
+
+            # k13
+            if KELAS == "4 SD" and KURIKULUM == "K13":
+                kode_kls_kur = k13_4sd
+                column_order = column_order_k13_4sd
+            elif KELAS == "5 SD" and KURIKULUM == "K13":
+                kode_kls_kur = k13_5sd
+                column_order = column_order_k13_5sd
+            elif KELAS == "7 SMP" and KURIKULUM == "K13":
+                kode_kls_kur = k13_7smp
+                column_order = column_order_k13_7smp
+            elif KELAS == "8 SMP" and KURIKULUM == "K13":
+                kode_kls_kur = k13_8smp
+                column_order = column_order_k13_8smp
+            elif KELAS == "10 IPA" and KURIKULUM == "K13":
+                kode_kls_kur = k13_10ipa
+                column_order = column_order_k13_10ipa
+            elif KELAS == "11 IPA" and KURIKULUM == "K13":
+                kode_kls_kur = k13_11ipa
+                column_order = column_order_k13_11ipa
+            elif KELAS == "10 IPS" and KURIKULUM == "K13":
+                kode_kls_kur = k13_10ips
+                column_order = column_order_k13_10ips
+            elif KELAS == "11 IPS" and KURIKULUM == "K13":
+                kode_kls_kur = k13_11ips
+                column_order = column_order_k13_11ips
+            # km
+            elif KELAS == "4 SD" and KURIKULUM == "KM":
+                kode_kls_kur = km_4sd
+                column_order = column_order_km_4sd
+            elif KELAS == "7 SMP" and KURIKULUM == "KM":
+                kode_kls_kur = km_7smp
+                column_order = column_order_km_7smp
+            elif KELAS == "10 SMA" and KURIKULUM == "KM":
+                kode_kls_kur = km_10sma
+                column_order = column_order_km_10sma
+            elif KELAS == "11 SMA" and KURIKULUM == "KM":
+                kode_kls_kur = km_11sma
+                column_order = column_order_km_11sma
+
+            result_filtered = result[result['kode'].isin(kode_kls_kur)]
+            result_filtered.drop_duplicates(
+                subset=['nama', 'kode'], keep='first', inplace=True)
+
+            # Menggunakan pivot_table untuk menjadikan konten kolom 'studi' sebagai header dan menghilangkan duplikat
+            result_pivot = pd.pivot_table(result_filtered, index=[
+                'nama', 'nonf', 'kd_lok', 'nama_sklh', 'kelas', 'idtahun'], columns='kode', values='jml_benar', aggfunc='first')
+            result_pivot.reset_index(inplace=True)  # Mengatur ulang indeks
+
+            # Ubah nama kolom
+            result_pivot = result_pivot.rename(
+                columns={'nama': 'NAMA', 'nonf': 'NONF', 'kd_lok': 'KD_LOK', 'nama_sklh': 'NAMA_SKLH', 'kelas': 'KELAS', 'idtahun': 'IDTAHUN',
+                         'LHHQHX38': 'MAW_11KM', 'LHHQNOEV': 'SOS_11KM', 'LHHQQ7WE': 'BIO_11KM', 'LHHQTDZN': 'ENG_11KM', 'LHHQVJ2O': 'FIS_11KM', 'LHHQXWPS': 'EKO_11KM', 'LHHR041C': 'IND_11KM', 'LHHR2936': 'SEJ_11KM', 'LHHR50DU': 'KIM_11KM', 'LHHR7D5N': 'GEO_11KM', 'LHPP32X4': 'MAP_11KM',
+                         'LHHPY4DQ': 'MAT_11IPS', 'LHHQ0GEG': 'SOS_11IPS', 'LHHQ2SOF': 'ENG_11IPS', 'LHHQ5KA7': 'EKO_11IPS', 'LHHQ9G2X': 'IND_11IPS', 'LHHQBZF1': 'SEJ_11IPS', 'LHHQEL75': 'GEO_11IPS',
+                         'LHHPMD5N': 'MAT_11IPA', 'LHHPPGY1': 'BIO_11IPA', 'LHHPSAH8': 'FIS_11IPA', 'LHHPVWEU': 'KIM_11IPA',
+                         'LHHP5ZFU': 'MAT_10KM', 'LHHP8HQU': 'IND_10KM', 'LHHPD245': 'ENG_10KM', 'LHHPGDX7': 'IPA_10KM', 'LHHPI776': 'IPS_10KM',
+                         'LHHOHQW3': 'MAT_10IPS', 'LHHOL2GH': 'SOS_10IPS', 'LHHOOPEJ': 'ENG_10IPS', 'LHHOR6Q5': 'EKO_10IPS', 'LHHOUB5D': 'IND_10IPS', 'LHHOXG3D': 'SEJ_10IPS', 'LHHP0FDK': 'GEO_10IPS',
+                         'LHHO4J0W': 'MAT_10IPA', 'LHHO78FV': 'BIO_10IPA', 'LHHOB3L0': 'FIS_10IPA', 'LHHODJIH': 'KIM_10IPA',
+                         'LHH6H3F6': 'MAT_8SMP', 'LHH6TEO5': 'IND_8SMP', 'LHHN9AZH': 'ENG_8SMP', 'LHHNDOAI': 'IPA_8SMP', 'LHHNFJ3E': 'IPS_8SMP',
+                         'LHHE7GC8': 'MAT_7KM', 'LHHEAQWK': 'IND_7KM', 'LHHEEEB5': 'ENG_7KM', 'LHHF9Q62': 'IPA_7KM', 'LHHFBCWT': 'IPS_7KM',
+                         'LHHDRBXZ': 'MAT_7SMP', 'LHHDUWKS': 'IND_7SMP', 'LHHDX6U7': 'ENG_7SMP', 'LHHDZC8Y': 'IPA_7SMP', 'LHHE476J': 'IPS_7SMP',
+                         'LHH5V62M': 'MAT_5SD', 'LHH6WL2C': 'IND_5SD', 'LHH7NAB5': 'ENG_5SD', 'LHHCO0Q4': 'IPA_5SD', 'LHHDAY7I': 'IPS_5SD',
+                         'LHH0U12P': 'MAT_4KM', 'LHH19TQN': 'IND_4KM', 'LHH47YLV': 'ENG_4KM', 'LHH4U3Q0': 'IPAS_4KM',
+                         'LHG94EEQ': 'MAT_4SD', 'LHG9KCRA': 'IND_4SD', 'LHGA44Y9': 'ENG_4SD', 'LHGALT9N': 'IPA_4SD', 'LHH0F32F': 'IPS_4SD'})
+
+            result_pivot = result_pivot.reindex(columns=column_order)
+
+            kelas = KELAS.lower().replace(" ", "")
+            kurikulum = KURIKULUM.lower()
+            tahun = TAHUN.replace("-", "")
+
+            path_file = f"{kelas}_pat_sm2_{kurikulum}_{tahun}_pivot.xlsx"
+
+            # Simpan file ke direktori temporer
+            temp_dir = tempfile.gettempdir()
+            file_path = temp_dir + '/' + path_file
+            # wb.save(file_path)
+
+            # Menyimpan DataFrame ke file Excel
+            result_pivot.to_excel(file_path, index=False)
+            st.success("File siap diunduh!")
+
+            # Tombol unduh file
+            with open(file_path, "rb") as f:
+                bytes_data = f.read()
+            st.download_button(label="Unduh File", data=bytes_data,
+                               file_name=path_file)
+    if selected_file == "Pivot PAT/SAT Sm2":
         # kurikulum - kelas - mapel
         # 4sd k13
         k13_4sd_mat = 'LHG94EEQ'
