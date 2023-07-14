@@ -7967,7 +7967,7 @@ if authentication_status:
                 (15, 20, 25, 30, 35, 40, 45, 50))
 
         with col3:
-            ENG = st.selectbox(
+            IPS = st.selectbox(
                 "JML. SOAL IPS.",
                 (15, 20, 25, 30, 35, 40, 45, 50))
 
