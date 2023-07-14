@@ -1834,14 +1834,14 @@ if authentication_status:
         with col8:
             PENILAIAN = st.selectbox(
                 "PENILAIAN",
-                ("--Pilih Penilaian--", "PENILAIAN TENGAH SEMESTER", "PENILAIAN AKHIR SEMESTER", "PENILAIAN AKHIR TAHUN", "TES EVALUASI"))
+                ("--Pilih Penilaian--", "PENILAIAN AKHIR SEMESTER", "SUMATIF AKHIR SEMESTER"))
 
         col9 = st.container()
 
         with col9:
             KURIKULUM = st.selectbox(
                 "KURIKULUM",
-                ("--Pilih Kurikulum--", "K13"))
+                ("--Pilih Kurikulum--", "K13", ""))
 
         TAHUN = st.text_input("Masukkan Tahun Ajaran",
                               placeholder="contoh: 2022-2023")
