@@ -522,7 +522,7 @@ if authentication_status:
                          'M2p1O'+toUmum_tahun+'KM': 'MAT_8SMP', 'I2p1O'+toUmum_tahun+'KM': 'IND_8SMP', 'E2p1O'+toUmum_tahun+'KM': 'ENG_8SMP', '529'+toBersama+'A1'+tahun: 'IPA_8SMP', '529'+toBersama+'S1'+tahun: 'IPS_8SMP', 'M2p1O'+toUnik_tahun+'KM': 'MAT_SB_8SMP',
                          'M3p1O'+toUmum_tahun+'KM': 'MAT_9SMP', 'I3p1O'+toUmum_tahun+'KM': 'IND_9SMP', 'E3p1O'+toUmum_tahun+'KM': 'ENG_9SMP', '628'+toBersama+'A1'+tahun: 'IPA_9SMP', '629'+toBersama+'S1'+tahun: 'IPS_9SMP', 
                          'M4x1O'+toBersama_tahun+'KM': 'MAT_10SMA', 'I4x1O'+toBersama_tahun+'KM': 'IND_10SMA', 'E4x1O'+toBersama_tahun+'KM': 'ENG_10SMA', '929'+toBersama10+'A1'+tahun: 'IPA_10SMA', '929'+toBersama10+'S1'+tahun: 'IPS_10SMA',
-                         'Q5x1O'+toBersama_tahun+'KM2': 'MAT_11SMA', 'I5x1O'+toBersama_tahun+'2KM': 'IND_11SMA', 'E5x1O'+toBersama_tahun+'KM2': 'ENG_11SMA', 'R5x1O'+toBersama_tahun+'KM2': 'PIL_MAT_11SMA', 
+                         'Q5x1O'+toBersama_tahun+'KM2': 'MAT_WJB_11SMA', 'I5x1O'+toBersama_tahun+'KM2': 'IND_11SMA', 'E5x1O'+toBersama_tahun+'KM2': 'ENG_11SMA', 'R5x1O'+toBersama_tahun+'KM2': 'PIL_MAT_11SMA', 
                          'F5x1O'+toBersama_tahun+'KM2': 'PIL_FIS_11SMA', 'K5x1O'+toUnikBK_tahun+'KM2': 'PIL_KIM_11SMA', 'B5x1O'+toUnikBK_tahun+'KM2': 'PIL_BIO_11SMA',
                          'S5x1O'+toBersama_tahun+'KM2': 'PIL_SEJ_11SMA', 'G5x1O'+toBersama_tahun+'KM2': 'PIL_GEO_11SMA', 'O5x1O'+toBersama_tahun+'KM2': 'PIL_EKO_11SMA', 'L5x1O'+toBersama_tahun+'KM2': 'PIL_SOS_11SMA', 'N5x1O'+toBersama_tahun+'KM2': 'PIL_ANT_11SMA', 
                         #  ppls ronin
