@@ -511,13 +511,17 @@ if authentication_status:
                          'M5a1O'+toUmum_tahun+'K13': 'MAT_11_IPA', 'F5a1O'+toUmum_tahun+'K13': 'FIS_11_IPA', 'K5a1O'+toUmum_tahun+'K13': 'KIM_11_IPA', 'B5a1O'+toUmum_tahun+'K13': 'BIO_11_IPA',
                          'M4s1O'+toUmum_tahun+'K13': 'MAT_10_IPS', 'I4s1O'+toUmum_tahun+'K13': 'IND_10_IPS', 'E4s1O'+toUmum_tahun+'K13': 'ENG_10_IPS', 'S4s1O'+toUmum_tahun+'K13': 'SEJ_10_IPS', 'G4s1O'+toUmum_tahun+'K13': 'GEO_10_IPS', 'O4s1O'+toUmum_tahun+'K13': 'EKO_10_IPS', 'L4s1O'+toUmum_tahun+'K13': 'SOS_10_IPS',
                          'M5s1O'+toUmum_tahun+'K13': 'MAT_11_IPS', 'I5s1O'+toUmum_tahun+'K13': 'IND_11_IPS', 'E5s1O'+toUmum_tahun+'K13': 'ENG_11_IPS', 'S5s1O'+toUmum_tahun+'K13': 'SEJ_11_IPS', 'G5s1O'+toUmum_tahun+'K13': 'GEO_11_IPS', 'O5s1O'+toUmum_tahun+'K13': 'EKO_11_IPS', 'L5s1O'+toUmum_tahun+'K13': 'SOS_11_IPS',
+                        #  km
                          'M4d1O'+toUmum_tahun+'KM': 'MAT_4SD', 'I4d1O'+toUmum_tahun+'KM': 'IND_4SD', 'E4d1O'+toUmum_tahun+'KM': 'ENG_4SD', '127'+toBersama+'D1'+tahun: 'IPAS_4SD',
                          'M5d1O'+toUmum_tahun+'KM': 'MAT_5SD', 'I5d1O'+toUmum_tahun+'KM': 'IND_5SD', 'E5d1O'+toUmum_tahun+'KM': 'ENG_5SD', '227'+toBersama+'D1'+tahun: 'IPAS_5SD',
                          'M1p1O'+toUmum_tahun+'KM': 'MAT_7SMP', 'I1p1O'+toUmum_tahun+'KM': 'IND_7SMP', 'E1p1O'+toUmum_tahun+'KM': 'ENG_7SMP', '429'+toBersama+'A1'+tahun: 'IPA_7SMP', '429'+toBersama+'S1'+tahun: 'IPS_7SMP',
                          'M2p1O'+toUmum_tahun+'KM': 'MAT_8SMP', 'I2p1O'+toUmum_tahun+'KM': 'IND_8SMP', 'E2p1O'+toUmum_tahun+'KM': 'ENG_8SMP', '529'+toBersama+'A1'+tahun: 'IPA_8SMP', '529'+toBersama+'S1'+tahun: 'IPS_8SMP', 'M2p1O'+toUnik_tahun+'KM': 'MAT_SB_8SMP',
-                         'M3p1O'+toUmum_tahun+'KM': 'MAT_9SMP', 'I3p1O'+toUmum_tahun+'KM': 'IND_9SMP', 'E3p1O'+toUmum_tahun+'KM': 'ENG_9SMP', '628'+toBersama+'A1'+tahun: 'IPA_9SMP', '629'+toBersama+'S1'+tahun: 'IPS_9SMP',
+                         'M3p1O'+toUmum_tahun+'KM': 'MAT_9SMP', 'I3p1O'+toUmum_tahun+'KM': 'IND_9SMP', 'E3p1O'+toUmum_tahun+'KM': 'ENG_9SMP', '628'+toBersama+'A1'+tahun: 'IPA_9SMP', '629'+toBersama+'S1'+tahun: 'IPS_9SMP', 
+                        #  ppls ronin
                          'M9a1O'+toUmum_tahun+'PPLS': 'MAT_PPLS_IPA', 'F9a1O'+toUmum_tahun+'PPLS': 'FIS_PPLS_IPA', 'K9a1O'+toUmum_tahun+'PPLS': 'KIM_PPLS_IPA', 'B9a1O'+toUmum_tahun+'PPLS': 'BIO_PPLS_IPA',
-                         'G9s1O'+toUmum_tahun+'PPLS': 'GEO_PPLS_IPS', 'O9s1O'+toUmum_tahun+'PPLS': 'EKO_PPLS_IPS', 'S9s1O'+toUmum_tahun+'PPLS': 'SEJ_PPLS_IPS', 'L9s1O'+toUmum_tahun+'PPLS': 'SOS_PPLS_IPS'})
+                         'G9s1O'+toUmum_tahun+'PPLS': 'GEO_PPLS_IPS', 'O9s1O'+toUmum_tahun+'PPLS': 'EKO_PPLS_IPS', 'S9s1O'+toUmum_tahun+'PPLS': 'SEJ_PPLS_IPS', 'L9s1O'+toUmum_tahun+'PPLS': 'SOS_PPLS_IPS',
+                         'M8a1O'+toUmum_tahun+'RONIN': 'MAT_RONIN_IPA', 'F8a1O'+toUmum_tahun+'RONIN': 'FIS_RONIN_IPA', 'K8a1O'+toUmum_tahun+'RONIN': 'KIM_RONIN_IPA', 'B8a1O'+toUmum_tahun+'RONIN': 'BIO_RONIN_IPA',
+                         'G8s1O'+toUmum_tahun+'RONIN': 'GEO_RONIN_IPS', 'O8s1O'+toUmum_tahun+'RONIN': 'EKO_RONIN_IPS', 'S8s1O'+toUmum_tahun+'RONIN': 'SEJ_RONIN_IPS', 'L8s1O'+toUmum_tahun+'RONIN': 'SOS_RONIN_IPS'})
 
             result_pivot = result_pivot.reindex(columns=column_order)
 
