@@ -293,7 +293,7 @@ if authentication_status:
                                 'ENG_11SMA', 'PIL_MTK_11SMA']
 
         # 11sma km bio
-        km_11sma_bio = 'B5x1O'+toBersamaBK_tahun+'KM2'
+        km_11sma_bio = 'B5x1O'+toUnikBK_tahun+'KM2'
         km_11sma_pil_bio = [km_11sma_mat_wjb, km_11sma_ind,
                    km_11sma_eng, km_11sma_bio]
         column_order_km_11sma_pil_bio = ['IDTAHUN', 'NAMA', 'NONF', 'KELAS', 'NAMA_SKLH', 'KD_LOK', 'MAT_WJB_11SMA', 'IND_11SMA',
@@ -307,7 +307,7 @@ if authentication_status:
                                 'ENG_11SMA', 'PIL_FIS_11SMA']
 
         # 11sma km kim
-        km_11sma_kim = 'K5x1O'+toBersamaBK_tahun+'KM2'
+        km_11sma_kim = 'K5x1O'+toUnikBK_tahun+'KM2'
         km_11sma_pil_kim = [km_11sma_mat_wjb, km_11sma_ind,
                    km_11sma_eng, km_11sma_kim]
         column_order_km_11sma_pil_kim = ['IDTAHUN', 'NAMA', 'NONF', 'KELAS', 'NAMA_SKLH', 'KD_LOK', 'MAT_WJB_11SMA', 'IND_11SMA',
@@ -523,7 +523,7 @@ if authentication_status:
                          'M3p1O'+toUmum_tahun+'KM': 'MAT_9SMP', 'I3p1O'+toUmum_tahun+'KM': 'IND_9SMP', 'E3p1O'+toUmum_tahun+'KM': 'ENG_9SMP', '628'+toBersama+'A1'+tahun: 'IPA_9SMP', '629'+toBersama+'S1'+tahun: 'IPS_9SMP', 
                          'M4x1O'+toBersama_tahun+'KM': 'MAT_10SMA', 'I4x1O'+toBersama_tahun+'KM': 'IND_10SMA', 'E4x1O'+toBersama_tahun+'KM': 'ENG_10SMA', '929'+toBersama10+'A1'+tahun: 'IPA_10SMA', '929'+toBersama10+'S1'+tahun: 'IPS_10SMA',
                          'Q5x1O'+toBersama_tahun+'KM2': 'MAT_11SMA', 'I5x1O'+toBersama_tahun+'2KM': 'IND_11SMA', 'E5x1O'+toBersama_tahun+'KM2': 'ENG_11SMA', 'R5x1O'+toBersama_tahun+'KM2': 'PIL_MAT_11SMA', 
-                         'F5x1O'+toBersama_tahun+'KM2': 'PIL_FIS_11SMA', 'K5x1O'+toBersamaBK_tahun+'KM2': 'PIL_KIM_11SMA', 'B5x1O'+toBersamaBK_tahun+'KM2': 'PIL_BIO_11SMA',
+                         'F5x1O'+toBersama_tahun+'KM2': 'PIL_FIS_11SMA', 'K5x1O'+toUnikBK_tahun+'KM2': 'PIL_KIM_11SMA', 'B5x1O'+toUnikBK_tahun+'KM2': 'PIL_BIO_11SMA',
                          'S5x1O'+toBersama_tahun+'KM2': 'PIL_SEJ_11SMA', 'G5x1O'+toBersama_tahun+'KM2': 'PIL_GEO_11SMA', 'O5x1O'+toBersama_tahun+'KM2': 'PIL_EKO_11SMA', 'L5x1O'+toBersama_tahun+'KM2': 'PIL_SOS_11SMA', 'N5x1O'+toBersama_tahun+'KM2': 'PIL_ANT_11SMA', 
                         #  ppls ronin
                          'M9a1O'+toUmum_tahun+'PPLS': 'MAT_PPLS_IPA', 'F9a1O'+toUmum_tahun+'PPLS': 'FIS_PPLS_IPA', 'K9a1O'+toUmum_tahun+'PPLS': 'KIM_PPLS_IPA', 'B9a1O'+toUmum_tahun+'PPLS': 'BIO_PPLS_IPA',
