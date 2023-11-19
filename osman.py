@@ -38,7 +38,7 @@ if authentication_status:
                 f'''<a href={url}><button style="background-color:GreenYellow;">Untuk Lok.</button></a>''', unsafe_allow_html=True)
         selected_file = option_menu(
             menu_title="Pilih file:",
-            options=["Pivot PAS/SAS",
+            options=["Pivot PAS",
                      "Nilai Std. SD, SMP",
                      "Nilai Std. All IPA",
                      "Nilai Std. 10, 11 IPS",
