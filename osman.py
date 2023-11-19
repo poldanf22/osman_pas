@@ -47,7 +47,7 @@ if authentication_status:
                      "Nilai Std. 5SD",
                      "Nilai Std. 10KM"],
         )
-    if selected_file == "Pivot PAS/SAS":
+    if selected_file == "Pivot PAS":
         # kurikulum - kelas - mapel
         # 4sd k13
         k13_4sd_mat = 'L9QDEBOG'
