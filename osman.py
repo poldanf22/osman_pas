@@ -47,169 +47,302 @@ if authentication_status:
                      "Nilai Std. 5SD",
                      "Nilai Std. 10KM"],
         )
+    toUmum_tahun = "0223-24"
+    toUnik_tahun = "0423-24"
+    toBersama = "2"
+    toBersama10 = "0"
+    tahun = "23-24"
+    st.write(toUmum_tahun)
     if selected_file == "Pivot PAS":
         # kurikulum - kelas - mapel
         # 4sd k13
-        k13_4sd_mat = 'L9QDEBOG'
-        k13_4sd_ind = 'L9QDN296'
-        k13_4sd_eng = 'L9QDPSOV'
-        k13_4sd_ipa = 'L9QDR0MB'
-        k13_4sd_ips = 'L9QDTU4F'
+        k13_4sd_mat = 'M4d1O'+toUmum_tahun+'K13'
+        k13_4sd_ind = 'I4d1O'+toUmum_tahun+'K13'
+        k13_4sd_eng = 'E4d1O'+toUmum_tahun+'K13'
+        k13_4sd_ipa = 'A4d1O'+toUmum_tahun+'K13'
+        k13_4sd_ips = 'Z4d1O'+toUmum_tahun+'K13'
         k13_4sd = [k13_4sd_mat, k13_4sd_ind,
                    k13_4sd_eng, k13_4sd_ipa, k13_4sd_ips]
         column_order_k13_4sd = ['IDTAHUN', 'NAMA', 'NONF', 'KELAS', 'NAMA_SKLH', 'KD_LOK', 'MAT_4SD', 'IND_4SD',
                                 'ENG_4SD', 'IPA_4SD', 'IPS_4SD']
 
-        # 4sd km
-        km_4sd_mat = 'L9QM7CXT'
-        km_4sd_ind = 'L9QM92BE'
-        km_4sd_eng = 'L9QMB382'
-        km_4sd_ipas = 'L9QMC1VY'
-        km_4sd = [km_4sd_mat, km_4sd_ind, km_4sd_eng, km_4sd_ipas]
-        column_order_km_4sd = ['IDTAHUN', 'NAMA', 'NONF', 'KELAS', 'NAMA_SKLH', 'KD_LOK', 'MAT_4KM', 'IND_4KM',
-                               'ENG_4KM', 'IPAS_4KM']
-
         # 5sd k13
-        k13_5sd_mat = 'L9QO1SVL'
-        k13_5sd_ind = 'L9QO7IZ0'
-        k13_5sd_ipa = 'L9QODV90'
-        k13_5sd_ips = 'L9QOFGPQ'
+        k13_5sd_mat = 'M5d1O'+toUmum_tahun+'K13'
+        k13_5sd_ind = 'I5d1O'+toUmum_tahun+'K13'
+        k13_5sd_eng = 'E5d1O'+toUmum_tahun+'K13'
+        k13_5sd_ipa = 'A5d1O'+toUmum_tahun+'K13'
+        k13_5sd_ips = 'Z5d1O'+toUmum_tahun+'K13'
         k13_5sd = [k13_5sd_mat, k13_5sd_ind,
-                   k13_5sd_ipa, k13_5sd_ips]
+                   k13_5sd_eng, k13_5sd_ipa, k13_5sd_ips]
         column_order_k13_5sd = ['IDTAHUN', 'NAMA', 'NONF', 'KELAS', 'NAMA_SKLH', 'KD_LOK', 'MAT_5SD', 'IND_5SD',
-                                'IPA_5SD', 'IPS_5SD']
+                                'ENG_5SD', 'IPA_5SD', 'IPS_5SD']
 
         # 6sd k13
-        k13_6sd_mat = 'L9RTIN0I'
-        k13_6sd_ind = 'L9RTK7OI'
-        k13_6sd_eng = 'L9RTZ866'
-        k13_6sd_ipa = 'L9RU3QPK'
-        k13_6sd_ips = 'L9RU68E6'
+        k13_6sd_mat = 'M6d1O'+toUmum_tahun+'K13'
+        k13_6sd_ind = 'I6d1O'+toUmum_tahun+'K13'
+        k13_6sd_eng = 'E6d1O'+toUmum_tahun+'K13'
+        k13_6sd_ipa = 'A6d1O'+toUmum_tahun+'K13'
+        k13_6sd_ips = 'Z6d1O'+toUmum_tahun+'K13'
         k13_6sd = [k13_6sd_mat, k13_6sd_ind,
                    k13_6sd_eng, k13_6sd_ipa, k13_6sd_ips]
         column_order_k13_6sd = ['IDTAHUN', 'NAMA', 'NONF', 'KELAS', 'NAMA_SKLH', 'KD_LOK', 'MAT_6SD', 'IND_6SD',
                                 'ENG_6SD', 'IPA_6SD', 'IPS_6SD']
-
+        
         # 7smp k13
-        k13_7smp_mat = 'L9S0GWBA'
-        k13_7smp_ind = 'L9S0I3KJ'
-        k13_7smp_eng = 'L9S0JWQ7'
-        k13_7smp_ipa = 'L9S0RALP'
-        k13_7smp_ips = 'L9S0T6ZB'
+        k13_7smp_mat = 'M1p1O'+toUmum_tahun+'K13'
+        k13_7smp_ind = 'I1p1O'+toUmum_tahun+'K13'
+        k13_7smp_eng = 'E1p1O'+toUmum_tahun+'K13'
+        k13_7smp_ipa = '417'+toBersama+'A1'+tahun
+        k13_7smp_ips = '417'+toBersama+'S1'+tahun
         k13_7smp = [k13_7smp_mat, k13_7smp_ind,
                     k13_7smp_eng, k13_7smp_ipa, k13_7smp_ips]
         column_order_k13_7smp = ['IDTAHUN', 'NAMA', 'NONF', 'KELAS', 'NAMA_SKLH', 'KD_LOK', 'MAT_7SMP', 'IND_7SMP',
                                  'ENG_7SMP', 'IPA_7SMP', 'IPS_7SMP']
-
-        # 7smp km
-        km_7smp_mat = 'L9S23TZT'
-        km_7smp_ind = 'L9S25VBP'
-        km_7smp_eng = 'L9S29Q7F'
-        km_7smp_ipa = 'L9S2B5X0'
-        km_7smp_ips = 'L9S2L61D'
-        km_7smp = [km_7smp_mat, km_7smp_ind,
-                   km_7smp_eng, km_7smp_ipa, km_7smp_ips]
-        column_order_km_7smp = ['IDTAHUN', 'NAMA', 'NONF', 'KELAS', 'NAMA_SKLH', 'KD_LOK', 'MAT_7KM', 'IND_7KM',
-                                'ENG_7KM', 'IPA_7KM', 'IPS_7KM']
-
+        
         # 8smp k13
-        k13_8smp_mat = 'L9SCVUO7'
-        k13_8smp_ind = 'L9SDDA9Y'
-        k13_8smp_eng = 'L9SEQUFL'
-        k13_8smp_ipa = 'L9SF4AIK'
-        k13_8smp_ips = 'L9SFJCOV'
+        k13_8smp_mat = 'M2p1O'+toUmum_tahun+'K13'
+        k13_8smp_ind = 'I2p1O'+toUmum_tahun+'K13'
+        k13_8smp_eng = 'E2p1O'+toUmum_tahun+'K13'
+        k13_8smp_ipa = '517'+toBersama+'A1'+tahun
+        k13_8smp_ips = '517'+toBersama+'S1'+tahun
         k13_8smp = [k13_8smp_mat, k13_8smp_ind,
                     k13_8smp_eng, k13_8smp_ipa, k13_8smp_ips]
         column_order_k13_8smp = ['IDTAHUN', 'NAMA', 'NONF', 'KELAS', 'NAMA_SKLH', 'KD_LOK', 'MAT_8SMP', 'IND_8SMP',
                                  'ENG_8SMP', 'IPA_8SMP', 'IPS_8SMP']
-
+        
         # 9smp k13
-        k13_9smp_mat = 'L9TFA2OM'
-        k13_9smp_ind = 'L9TFIGFW'
-        k13_9smp_eng = 'L9TFMTCY'
-        k13_9smp_ipa = 'L9TFOLX9'
-        k13_9smp_ips = 'L9TFPLR0'
+        k13_9smp_mat = 'M3p1O'+toUmum_tahun+'K13'
+        k13_9smp_ind = 'I3p1O'+toUmum_tahun+'K13'
+        k13_9smp_eng = 'E3p1O'+toUmum_tahun+'K13'
+        k13_9smp_ipa = '617'+toBersama+'A2'+tahun
+        k13_9smp_ips = '617'+toBersama+'S2'+tahun
         k13_9smp = [k13_9smp_mat, k13_9smp_ind,
                     k13_9smp_eng, k13_9smp_ipa, k13_9smp_ips]
         column_order_k13_9smp = ['IDTAHUN', 'NAMA', 'NONF', 'KELAS', 'NAMA_SKLH', 'KD_LOK', 'MAT_9SMP', 'IND_9SMP',
                                  'ENG_9SMP', 'IPA_9SMP', 'IPS_9SMP']
-
-        # 10sma ipa k13
-        k13_10ipa_mat = 'L9W9LKWO'
-        k13_10ipa_bio = 'L9W5BU0N'
-        k13_10ipa_fis = 'L9W5R2GE'
-        k13_10ipa_kim = 'L9W5TEF3'
+        
+        # 10 ipa k13
+        k13_10ipa_mat = 'M4a1O'+toUmum_tahun+'K13'
+        k13_10ipa_bio = 'B4a1O'+toUmum_tahun+'K13'
+        k13_10ipa_fis = 'F4a1O'+toUmum_tahun+'K13'
+        k13_10ipa_kim = 'K4a1O'+toUmum_tahun+'K13'
         k13_10ipa = [k13_10ipa_mat, k13_10ipa_bio,
-                     k13_10ipa_fis, k13_10ipa_kim]
-        column_order_k13_10ipa = ['IDTAHUN', 'NAMA', 'NONF', 'KELAS', 'NAMA_SKLH', 'KD_LOK', 'MAT_10IPA', 'FIS_10IPA',
-                                  'KIM_10IPA', 'BIO_10IPA']
-
+                    k13_10ipa_fis, k13_10ipa_kim]
+        column_order_k13_10ipa = ['IDTAHUN', 'NAMA', 'NONF', 'KELAS', 'NAMA_SKLH', 'KD_LOK', 'MAT_10IPA', 'BIO_10IPA',
+                                 'FIS_10IPA', 'KIM_10IPA']
+        
         # 10sma ips k13
-        k13_10ips_mat = 'L9W29MFV'
-        k13_10ips_sos = 'L9W2PTDI'
-        k13_10ips_eng = 'L9W4T0HB'
-        k13_10ips_eko = 'L9W5HFLP'
-        k13_10ips_ind = 'L9W3ARNP'
-        k13_10ips_sej = 'L9W3DYM4'
-        k13_10ips_geo = 'L9W55RF5'
+        k13_10ips_mat = 'M4s1O'+toUmum_tahun+'K13'
+        k13_10ips_sos = 'L4s1O'+toUmum_tahun+'K13'
+        k13_10ips_eng = 'E4s1O'+toUmum_tahun+'K13'
+        k13_10ips_eko = 'O4s1O'+toUmum_tahun+'K13'
+        k13_10ips_ind = 'I4s1O'+toUmum_tahun+'K13'
+        k13_10ips_sej = 'S4s1O'+toUmum_tahun+'K13'
+        k13_10ips_geo = 'G4s1O'+toUmum_tahun+'K13'
         k13_10ips = [k13_10ips_mat, k13_10ips_sos, k13_10ips_eng,
                      k13_10ips_eko, k13_10ips_ind, k13_10ips_sej, k13_10ips_geo]
         column_order_k13_10ips = ['IDTAHUN', 'NAMA', 'NONF', 'KELAS', 'NAMA_SKLH', 'KD_LOK', 'MAT_10IPS', 'IND_10IPS',
                                   'ENG_10IPS', 'SEJ_10IPS', 'GEO_10IPS', 'EKO_10IPS', 'SOS_10IPS']
-
-        # 10sma km
-        km_10sma_mat = 'L9W68CVB'
-        km_10sma_ind = 'LADJHJKV'
-        km_10sma_eng = 'LADJDN8W'
-        km_10sma_ipa = 'L9W79KVQ'
-        km_10sma = [km_10sma_mat, km_10sma_ind,
-                    km_10sma_eng, km_10sma_ipa]
-        column_order_km_10sma = ['IDTAHUN', 'NAMA', 'NONF', 'KELAS', 'NAMA_SKLH', 'KD_LOK', 'MAT_10KM', 'IND_10KM',
-                                 'ENG_10KM', 'IPA_10KM']
-
+        
         # 11sma ipa k13
-        k13_11ipa_mat = 'L9W5YBZA'
-        k13_11ipa_bio = 'L9W7DUG4'
-        k13_11ipa_fis = 'L9W7OZR3'
-        k13_11ipa_kim = 'L9W8IP45'
+        k13_11ipa_mat = 'M5a1O'+toUmum_tahun+'K13'
+        k13_11ipa_bio = 'B5a1O'+toUmum_tahun+'K13'
+        k13_11ipa_fis = 'F5a1O'+toUmum_tahun+'K13'
+        k13_11ipa_kim = 'K5a1O'+toUmum_tahun+'K13'
         k13_11ipa = [k13_11ipa_mat, k13_11ipa_bio,
                      k13_11ipa_fis, k13_11ipa_kim]
         column_order_k13_11ipa = ['IDTAHUN', 'NAMA', 'NONF', 'KELAS', 'NAMA_SKLH', 'KD_LOK', 'MAT_11IPA', 'FIS_11IPA',
                                   'KIM_11IPA', 'BIO_11IPA']
 
         # 11sma ips k13
-        k13_11ips_mat = 'L9W7P7DY'
-        k13_11ips_sos = 'L9WGOT8D'
-        k13_11ips_eng = 'L9W9S6O2'
-        k13_11ips_eko = 'L9WG7JI0'
-        k13_11ips_ind = 'L9W9F1TU'
-        k13_11ips_sej = 'L9WA45A3'
-        k13_11ips_geo = 'L9WFT052'
+        k13_11ips_mat = 'M5s1O'+toUmum_tahun+'K13'
+        k13_11ips_sos = 'L5s1O'+toUmum_tahun+'K13'
+        k13_11ips_eng = 'E5s1O'+toUmum_tahun+'K13'
+        k13_11ips_eko = 'O5s1O'+toUmum_tahun+'K13'
+        k13_11ips_ind = 'I5s1O'+toUmum_tahun+'K13'
+        k13_11ips_sej = 'S5s1O'+toUmum_tahun+'K13'
+        k13_11ips_geo = 'G5s1O'+toUmum_tahun+'K13'
         k13_11ips = [k13_11ips_mat, k13_11ips_sos, k13_11ips_eng,
                      k13_11ips_eko, k13_11ips_ind, k13_11ips_sej, k13_11ips_geo]
         column_order_k13_11ips = ['IDTAHUN', 'NAMA', 'NONF', 'KELAS', 'NAMA_SKLH', 'KD_LOK', 'MAT_11IPS', 'IND_11IPS',
                                   'ENG_11IPS', 'SEJ_11IPS', 'GEO_11IPS', 'EKO_11IPS', 'SOS_11IPS']
+        
+        # ppls ipa
+        ppls_ipa_mat = 'M9a1O'+toUmum_tahun+'PPLS'
+        ppls_ipa_bio = 'B9a1O'+toUmum_tahun+'PPLS'
+        ppls_ipa_fis = 'F9a1O'+toUmum_tahun+'PPLS'
+        ppls_ipa_kim = 'K9a1O'+toUmum_tahun+'PPLS'
+        ppls_ipa = [ppls_ipa_mat, ppls_ipa_bio,
+                       ppls_ipa_fis, ppls_ipa_kim]
+        column_order_k13_ppls_ipa = ['IDTAHUN', 'NAMA', 'NONF', 'KELAS', 'NAMA_SKLH', 'KD_LOK', 'MAT_PPLS_IPA', 'FIS_PPLS_IPA',
+                                    'KIM_PPLS_IPA', 'BIO_PPLS_IPA']
 
-        # ppls ipa k13
-        k13_pplsipa_mat = 'L9W5YBZA'
-        k13_pplsipa_bio = 'L9W7DUG4'
-        k13_pplsipa_fis = 'L9W7OZR3'
-        k13_pplsipa_kim = 'L9W8IP45'
-        k13_pplsipa = [k13_pplsipa_mat, k13_pplsipa_bio,
-                       k13_pplsipa_fis, k13_pplsipa_kim]
-        column_order_k13_pplsipa = ['IDTAHUN', 'NAMA', 'NONF', 'KELAS', 'NAMA_SKLH', 'KD_LOK', 'MAT_PPLSIPA', 'FIS_PPLSIPA',
-                                    'KIM_PPLSIPA', 'BIO_PPLSIPA']
+        # ppls ips
+        ppls_ips_geo = 'G9s1O'+toUmum_tahun+'PPLS'
+        ppls_ips_eko = 'O9s1O'+toUmum_tahun+'PPLS'
+        ppls_ips_sej = 'S9s1O'+toUmum_tahun+'PPLS'
+        ppls_ips_sos = 'L9s1O'+toUmum_tahun+'PPLS'
+        ppls_ips = [ppls_ips_geo, ppls_ips_eko,
+                    ppls_ips_sej, ppls_ips_sos]
+        column_order_ppls_ips = ['IDTAHUN', 'NAMA', 'NONF', 'KELAS', 'NAMA_SKLH', 'KD_LOK', 'GEO_PPLS_IPS',
+                                 'EKO_PPLS_IPS', 'SEJ_PPLS_IPS', 'SOS_PPLS_IPS',]
+        
+        # ronin ipa
+        ronin_ipa_mat = 'M8a1O'+toUmum_tahun+'RONIN'
+        ronin_ipa_bio = 'B8a1O'+toUmum_tahun+'RONIN'
+        ronin_ipa_fis = 'F8a1O'+toUmum_tahun+'RONIN'
+        ronin_ipa_kim = 'K8a1O'+toUmum_tahun+'RONIN'
+        ronin_ipa = [ronin_ipa_mat, ronin_ipa_bio,
+                       ronin_ipa_fis, ronin_ipa_kim]
+        column_order_k13_ronin_ipa = ['IDTAHUN', 'NAMA', 'NONF', 'KELAS', 'NAMA_SKLH', 'KD_LOK', 'MAT_RONIN_IPA', 'FIS_RONIN_IPA',
+                                    'KIM_RONIN_IPA', 'BIO_RONIN_IPA']
 
-        # ppls ips k13
-        k13_pplsips_mat = 'LADYWD3B'
-        k13_pplsips_sej = 'L9XX80UB'
-        k13_pplsips_geo = 'L9XX8YW7'
-        k13_pplsips_eko = 'L9XXB61J'
-        k13_pplsips_sos = 'L9XXDA0R'
-        k13_pplsips = [k13_pplsips_mat, k13_pplsips_sej,
-                       k13_pplsips_geo, k13_pplsips_eko, k13_pplsips_sos]
-        column_order_k13_pplsips = ['IDTAHUN', 'NAMA', 'NONF', 'KELAS', 'NAMA_SKLH', 'KD_LOK', 'MAT_PPLSIPS', 'SEJ_PPLSIPS',
-                                    'GEO_PPLSIPS', 'EKO_PPLSIPS', 'SOS_PPLSIPS']
+        # ronin ips
+        ronin_ips_geo = 'G8s1O'+toUmum_tahun+'RONIN'
+        ronin_ips_eko = 'O8s1O'+toUmum_tahun+'RONIN'
+        ronin_ips_sej = 'S8s1O'+toUmum_tahun+'RONIN'
+        ronin_ips_sos = 'L8s1O'+toUmum_tahun+'RONIN'
+        ronin_ips = [ronin_ips_geo, ronin_ips_eko,
+                    ronin_ips_sej, ronin_ips_sos]
+        column_order_ronin_ips = ['IDTAHUN', 'NAMA', 'NONF', 'KELAS', 'NAMA_SKLH', 'KD_LOK', 'GEO_RONIN_IPS',
+                                 'EKO_RONIN_IPS', 'SEJ_RONIN_IPS', 'SOS_RONIN_IPS',]
+
+        # 4sd km
+        km_4sd_mat = 'M4d1O'+toUmum_tahun+'KM'
+        km_4sd_ind = 'I4d1O'+toUmum_tahun+'KM'
+        km_4sd_eng = 'E4d1O'+toUmum_tahun+'KM'
+        km_4sd_ipas = '127'+toBersama+'D1'+tahun
+        km_4sd = [km_4sd_mat, km_4sd_ind,
+                  km_4sd_eng, km_4sd_ipas]
+        column_order_km_4sd = ['IDTAHUN', 'NAMA', 'NONF', 'KELAS', 'NAMA_SKLH', 'KD_LOK', 'MAT_4SD', 'IND_4SD',
+                               'ENG_4SD', 'IPAS_4SD']
+        
+        # 5sd km
+        km_5sd_mat = 'M5d1O'+toUmum_tahun+'KM'
+        km_5sd_ind = 'I5d1O'+toUmum_tahun+'KM'
+        km_5sd_eng = 'E5d1O'+toUmum_tahun+'KM'
+        km_5sd_ipas = '227'+toBersama+'D1'+tahun
+        km_5sd = [km_5sd_mat, km_5sd_ind,
+                  km_5sd_eng, km_5sd_ipas]
+        column_order_km_5sd = ['IDTAHUN', 'NAMA', 'NONF', 'KELAS', 'NAMA_SKLH', 'KD_LOK', 'MAT_5SD', 'IND_5SD',
+                               'ENG_5SD', 'IPAS_5SD']
+
+        # 7smp km
+        km_7smp_mat = 'M1p1O'+toUmum_tahun+'KM'
+        km_7smp_ind = 'I1p1O'+toUmum_tahun+'KM'
+        km_7smp_eng = 'E1p1O'+toUmum_tahun+'KM'
+        km_7smp_ipa = '429'+toBersama+'A1'+tahun
+        km_7smp_ips = '429'+toBersama+'S1'+tahun
+        km_7smp = [km_7smp_mat, km_7smp_ind,
+                   km_7smp_eng, km_7smp_ipa, km_7smp_ips]
+        column_order_km_7smp = ['IDTAHUN', 'NAMA', 'NONF', 'KELAS', 'NAMA_SKLH', 'KD_LOK', 'MAT_7SMP', 'IND_7SMP',
+                                'ENG_7SMP', 'IPA_7SMP', 'IPS_7SMP']
+
+        # 8smp km sl
+        km_8smp_mat = 'M2p1O'+toUmum_tahun+'KM'
+        km_8smp_ind = 'I2p1O'+toUmum_tahun+'KM'
+        km_8smp_eng = 'E2p1O'+toUmum_tahun+'KM'
+        km_8smp_ipa = 'B2p1O'+toUmum_tahun+'KM'
+        km_8smp_ips = '529'+toBersama+'S1'+tahun
+        km_8smp = [km_8smp_mat, km_8smp_ind,
+                   km_8smp_eng, km_8smp_ipa, km_8smp_ips]
+        column_order_km_8smp = ['IDTAHUN', 'NAMA', 'NONF', 'KELAS', 'NAMA_SKLH', 'KD_LOK', 'MAT_8SMP', 'IND_8SMP',
+                                'ENG_8SMP', 'IPA_8SMP', 'IPS_8SMP']
+
+        # 8smp km sb
+        km_8smp_mat_sb = 'M2p1O'+toUnik_tahun+'KM'
+        km_8smp_sb = [km_8smp_mat_sb, km_8smp_ind,
+                   km_8smp_eng, km_8smp_ipa, km_8smp_ips]
+        column_order_km_8smp_sb = ['IDTAHUN', 'NAMA', 'NONF', 'KELAS', 'NAMA_SKLH', 'KD_LOK', 'MAT_SB_8SMP', 'IND_8SMP',
+                                'ENG_8SMP', 'IPA_8SMP', 'IPS_8SMP']
+
+        # 9smp km
+        km_9smp_mat = 'M3p1O'+toUmum_tahun+'KM'
+        km_9smp_ind = 'I3p1O'+toUmum_tahun+'KM'
+        km_9smp_eng = 'E3p1O'+toUmum_tahun+'KM'
+        km_9smp_ipa = '628'+toBersama+'A1'+tahun
+        km_9smp_ips = '629'+toBersama+'S1'+tahun
+        km_9smp = [km_9smp_mat, km_9smp_ind,
+                   km_9smp_eng, km_9smp_ipa, km_9smp_ips]
+        column_order_km_9smp = ['IDTAHUN', 'NAMA', 'NONF', 'KELAS', 'NAMA_SKLH', 'KD_LOK', 'MAT_9SMP', 'IND_9SMP',
+                                'ENG_9SMP', 'IPA_9SMP', 'IPS_9SMP']
+
+        # 10sma km
+        km_10sma_mat = 'M4x1O'+toUmum_tahun+'KM'
+        km_10sma_ind = 'I4x1O'+toUmum_tahun+'KM'
+        km_10sma_eng = 'E4x1O'+toUmum_tahun+'KM'
+        km_10sma_ipa = '929'+toBersama10+'A1'+tahun
+        km_10sma_ips = '929'+toBersama10+'S1'+tahun
+        km_10sma = [km_10sma_mat, km_10sma_ind,
+                   km_10sma_eng, km_10sma_ipa, km_10sma_ips]
+        column_order_km_10sma = ['IDTAHUN', 'NAMA', 'NONF', 'KELAS', 'NAMA_SKLH', 'KD_LOK', 'MAT_10SMA', 'IND_10SMA',
+                                'ENG_10SMA', 'IPA_10SMA', 'IPS_10SMA']
+
+        # 11sma km mtk
+        km_11sma_mat_wjb = 'Q5x1O'+toUmum_tahun+'KM'
+        km_11sma_ind = 'I5x1O'+toUmum_tahun+'KM'
+        km_11sma_eng = 'E5x1O'+toUmum_tahun+'KM'
+        km_11sma_mat_pil = 'R5x1O'+toUmum_tahun+'KM'
+        km_11sma_pil_mat = [km_11sma_mat_wjb, km_11sma_ind,
+                   km_11sma_eng, km_11sma_mat_pil]
+        column_order_km_11sma_pil_mat = ['IDTAHUN', 'NAMA', 'NONF', 'KELAS', 'NAMA_SKLH', 'KD_LOK', 'MAT_WJB_11SMA', 'IND_11SMA',
+                                'ENG_11SMA', 'PIL_MTK_11SMA']
+
+        # 11sma km bio
+        km_11sma_bio = 'B5x1O'+toUnik_tahun+'KM'
+        km_11sma_pil_bio = [km_11sma_mat_wjb, km_11sma_ind,
+                   km_11sma_eng, km_11sma_bio]
+        column_order_km_11sma_pil_bio = ['IDTAHUN', 'NAMA', 'NONF', 'KELAS', 'NAMA_SKLH', 'KD_LOK', 'MAT_WJB_11SMA', 'IND_11SMA',
+                                'ENG_11SMA', 'PIL_BIO_11SMA']
+        
+        # 11sma km fis
+        km_11sma_fis = 'F5x1O'+toUnik_tahun+'KM'
+        km_11sma_pil_fis = [km_11sma_mat_wjb, km_11sma_ind,
+                   km_11sma_eng, km_11sma_fis]
+        column_order_km_11sma_pil_fis = ['IDTAHUN', 'NAMA', 'NONF', 'KELAS', 'NAMA_SKLH', 'KD_LOK', 'MAT_WJB_11SMA', 'IND_11SMA',
+                                'ENG_11SMA', 'PIL_FIS_11SMA']
+
+        # 11sma km kim
+        km_11sma_kim = 'K5x1O'+toUnik_tahun+'KM'
+        km_11sma_pil_kim = [km_11sma_mat_wjb, km_11sma_ind,
+                   km_11sma_eng, km_11sma_kim]
+        column_order_km_11sma_pil_kim = ['IDTAHUN', 'NAMA', 'NONF', 'KELAS', 'NAMA_SKLH', 'KD_LOK', 'MAT_WJB_11SMA', 'IND_11SMA',
+                                'ENG_11SMA', 'PIL_KIM_11SMA']
+        
+        # 11sma km eko
+        km_11sma_eko = 'O5x1O'+toUnik_tahun+'KM'
+        km_11sma_pil_eko = [km_11sma_mat_wjb, km_11sma_ind,
+                   km_11sma_eng, km_11sma_eko]
+        column_order_km_11sma_pil_eko = ['IDTAHUN', 'NAMA', 'NONF', 'KELAS', 'NAMA_SKLH', 'KD_LOK', 'MAT_WJB_11SMA', 'IND_11SMA',
+                                'ENG_11SMA', 'PIL_EKO_11SMA']
+        
+        # 11sma km geo
+        km_11sma_geo = 'G5x1O'+toUnik_tahun+'KM'
+        km_11sma_pil_geo = [km_11sma_mat_wjb, km_11sma_ind,
+                   km_11sma_eng, km_11sma_geo]
+        column_order_km_11sma_pil_geo = ['IDTAHUN', 'NAMA', 'NONF', 'KELAS', 'NAMA_SKLH', 'KD_LOK', 'MAT_WJB_11SMA', 'IND_11SMA',
+                                'ENG_11SMA', 'PIL_GEO_11SMA']
+        
+        # 11sma km sej
+        km_11sma_sej = 'S5x1O'+toUnik_tahun+'KM'
+        km_11sma_pil_sej = [km_11sma_mat_wjb, km_11sma_ind,
+                   km_11sma_eng, km_11sma_sej]
+        column_order_km_11sma_pil_sej = ['IDTAHUN', 'NAMA', 'NONF', 'KELAS', 'NAMA_SKLH', 'KD_LOK', 'MAT_WJB_11SMA', 'IND_11SMA',
+                                'ENG_11SMA', 'PIL_SEJ_11SMA']
+        
+        # 11sma km sos
+        km_11sma_sos = 'L5x1O'+toUnik_tahun+'KM'
+        km_11sma_pil_sos = [km_11sma_mat_wjb, km_11sma_ind,
+                   km_11sma_eng, km_11sma_sos]
+        column_order_km_11sma_pil_sos = ['IDTAHUN', 'NAMA', 'NONF', 'KELAS', 'NAMA_SKLH', 'KD_LOK', 'MAT_WJB_11SMA', 'IND_11SMA',
+                                'ENG_11SMA', 'PIL_SOS_11SMA']
+        
+        # 11sma km ant
+        km_11sma_ant = 'N5x1O'+toUnik_tahun+'KM'
+        km_11sma_pil_ant = [km_11sma_mat_wjb, km_11sma_ind,
+                   km_11sma_eng, km_11sma_ant]
+        column_order_km_11sma_pil_ant = ['IDTAHUN', 'NAMA', 'NONF', 'KELAS', 'NAMA_SKLH', 'KD_LOK', 'MAT_WJB_11SMA', 'IND_11SMA',
+                                'ENG_11SMA', 'PIL_ANT_11SMA']
 
         image = Image.open('logo resmi nf resize.png')
         st.image(image)
@@ -220,13 +353,13 @@ if authentication_status:
         with col1:
             KURIKULUM = st.selectbox(
                 "KURIKULUM",
-                ("--Pilih Kurikulum--", "K13", "KM", ""))
+                ("--Pilih Kurikulum--", "K13", "KM", "PPLS", "RONIN"))
 
         col2 = st.container()
         with col2:
             KELAS = st.selectbox(
                 "KELAS",
-                ("--Pilih Kelas--", "4 SD", "5 SD", "7 SMP", "8 SMP", "10 IPA", "10 IPS", "10 SMA", "11 IPA", "11 IPS", "11 SMA"))
+                ("--Pilih Kelas--", "4 SD", "5 SD", "6 SD", "7 SMP", "8 SMP", "9 SMP", "10 IPA", "10 IPS", "10 SMA", "11 IPA", "11 IPS", "11 SMA PIL MAT", "11 SMA PIL BIO", "11 SMA PIL FIS", "11 SMA PIL KIM", "11 SMA PIL SEJ", "11 SMA PIL GEO", "11 SMA PIL EKO", "11 SMA PIL SOS", "11 SMA PIL ANT", "PPLS IPA", "PPLS IPS", "RONIN IPA", "RONIN IPS"))
 
         col3 = st.container()
         with col3:
@@ -237,28 +370,32 @@ if authentication_status:
         TAHUN = st.text_input("Masukkan Tahun Ajaran",
                               placeholder="contoh: 2022-2023")
 
-        uploaded_bobot = st.file_uploader(
-            'Letakkan file excel bobot TO', type='xlsx')
-        uploaded_jwb = st.file_uploader(
-            'Letakkan file excel jwb TO', type='xlsx')
+        url_contoh_detail ='https://docs.google.com/spreadsheets/d/1hq9P44M9P51GrJn07DyWsHA1xKFj--dG/edit?usp=sharing&ouid=100219691055398475739&rtpof=true&sd=true'
+        uploaded_detail = st.file_uploader(
+            'Letakkan file excel Detail Siswa', type='xlsx')
+        url_contoh_to_pts = 'https://docs.google.com/spreadsheets/d/1K-bWwSvkd0fgJ-xVtn-CWQcZH_-MoM8F/edit?usp=sharing&ouid=100219691055398475739&rtpof=true&sd=true'
+        uploaded_to_pts = st.file_uploader(
+            'Letakkan file excel TO PTS', type='xlsx')
 
-        bobot = None
-        jwb = None
+        detail = None
+        to_pts = None
 
-        if uploaded_bobot is not None:
-            bobot = pd.read_excel(uploaded_bobot)
+        if uploaded_detail is not None:
+            detail = pd.read_excel(uploaded_detail)
 
-        if uploaded_jwb is not None:
-            jwb = pd.read_excel(uploaded_jwb)
+        if uploaded_to_pts is not None:
+            to_pts = pd.read_excel(uploaded_to_pts)
 
-        if bobot is not None and jwb is not None:
-            bobot = bobot.drop(['id', 'jns_pkt', 'jns_tes', 'kel_studi', 'nama_tes', 'no_soal', 'bobot', 'kd_studi', 'bab', 'eigen', 'kode_soal', 'st_eigen',
-                                'modified_time', 'kode_naskah', 'group_tes', 'kunci', 'sequence', 'label', 'item_id'], axis=1)  # Menghilangkan kolom sebelum dilakukan merge
+        if detail is not None and to_pts is not None:
+            detail = detail.drop(['user_id', 'is_test_access', 'no_hp', 'lokasi_id', 'jenjang_id',
+                                  'riwayat_jenjang', 'jenjang_dipilih_id', 'kode_level', 'kode_kelas',
+                                  'tempat_lahir', 'tanggal_lahir', 'semester', 'tahun_ajar',
+                                  'program', 'pin', 'join_skolla', 'created_at', 'updated_at'], axis=1)  # Menghilangkan kolom sebelum dilakukan merge
 
-            result = pd.merge(bobot, jwb[['kode', 'nama', 'nonf', 'kd_lok',
-                                          'nama_sklh', 'kelas', 'jml_benar']], on='kode', how='left')
-            # Menghapus nilai NaN dari kolom 'nonf'
-            result = result.dropna(subset=['nonf'])
+            result = pd.merge(detail, to_pts[['no_nf', 'kode_paket', 'tahun_ajaran', 'kelas_id',
+                                              'lokasi_id', 'jumlah_benar']], on='no_nf', how='left')
+            # Menghapus nilai NaN dari kolom 'kode_paket'
+            result = result.dropna(subset=['kode_paket'])
 
             # k13
             if KELAS == "4 SD" and KURIKULUM == "K13":
@@ -267,12 +404,18 @@ if authentication_status:
             elif KELAS == "5 SD" and KURIKULUM == "K13":
                 kode_kls_kur = k13_5sd
                 column_order = column_order_k13_5sd
+            elif KELAS == "6 SD" and KURIKULUM == "K13":
+                kode_kls_kur = k13_6sd
+                column_order = column_order_k13_6sd
             elif KELAS == "7 SMP" and KURIKULUM == "K13":
                 kode_kls_kur = k13_7smp
                 column_order = column_order_k13_7smp
             elif KELAS == "8 SMP" and KURIKULUM == "K13":
                 kode_kls_kur = k13_8smp
                 column_order = column_order_k13_8smp
+            elif KELAS == "9 SMP" and KURIKULUM == "K13":
+                kode_kls_kur = k13_9smp
+                column_order = column_order_k13_9smp
             elif KELAS == "10 IPA" and KURIKULUM == "K13":
                 kode_kls_kur = k13_10ipa
                 column_order = column_order_k13_10ipa
@@ -289,44 +432,92 @@ if authentication_status:
             elif KELAS == "4 SD" and KURIKULUM == "KM":
                 kode_kls_kur = km_4sd
                 column_order = column_order_km_4sd
+            elif KELAS == "5 SD" and KURIKULUM == "KM":
+                kode_kls_kur = km_5sd
+                column_order = column_order_km_5sd
             elif KELAS == "7 SMP" and KURIKULUM == "KM":
                 kode_kls_kur = km_7smp
                 column_order = column_order_km_7smp
+            elif KELAS == "8 SMP" and KURIKULUM == "KM":
+                kode_kls_kur = km_8smp
+                column_order = column_order_km_8smp
+            elif KELAS == "9 SMP" and KURIKULUM == "KM":
+                kode_kls_kur = km_9smp
+                column_order = column_order_km_9smp
             elif KELAS == "10 SMA" and KURIKULUM == "KM":
                 kode_kls_kur = km_10sma
                 column_order = column_order_km_10sma
-            # elif KELAS == "11 SMA" and KURIKULUM == "KM":
-            #     kode_kls_kur = km_11sma
-            #     column_order = column_order_km_11sma
+            elif KELAS == "11 SMA PIL MAT" and KURIKULUM == "KM":
+                kode_kls_kur = km_11sma_pil_mat
+                column_order = column_order_km_11sma_pil_mat
+            elif KELAS == "11 SMA PIL BIO" and KURIKULUM == "KM":
+                kode_kls_kur = km_11sma_pil_bio
+                column_order = column_order_km_11sma_pil_bio
+            elif KELAS == "11 SMA PIL FIS" and KURIKULUM == "KM":
+                kode_kls_kur = km_11sma_pil_fis
+                column_order = column_order_km_11sma_pil_fis
+            elif KELAS == "11 SMA PIL KIM" and KURIKULUM == "KM":
+                kode_kls_kur = km_11sma_pil_kim
+                column_order = column_order_km_11sma_pil_kim
+            elif KELAS == "11 SMA PIL SEJ" and KURIKULUM == "KM":
+                kode_kls_kur = km_11sma_pil_sej
+                column_order = column_order_km_11sma_pil_sej
+            elif KELAS == "11 SMA PIL GEO" and KURIKULUM == "KM":
+                kode_kls_kur = km_11sma_pil_geo
+                column_order = column_order_km_11sma_pil_geo
+            elif KELAS == "11 SMA PIL EKO" and KURIKULUM == "KM":
+                kode_kls_kur = km_11sma_pil_eko
+                column_order = column_order_km_11sma_pil_eko
+            elif KELAS == "11 SMA PIL SOS" and KURIKULUM == "KM":
+                kode_kls_kur = km_11sma_pil_sos
+                column_order = column_order_km_11sma_pil_sos
+            elif KELAS == "11 SMA PIL ANT" and KURIKULUM == "KM":
+                kode_kls_kur = km_11sma_pil_ant
+                column_order = column_order_km_11sma_pil_ant
 
-            result_filtered = result[result['kode'].isin(kode_kls_kur)]
+            # ppls ronin
+            elif KELAS == "PPLS IPA" and KURIKULUM == "PPLS":
+                kode_kls_kur = ppls_ipa
+                column_order = column_order_ppls_ipa
+            elif KELAS == "PPLS IPS" and KURIKULUM == "PPLS":
+                kode_kls_kur = ppls_ips
+                column_order = column_order_ppls_ips
+            elif KELAS == "RONIN IPA" and KURIKULUM == "RONIN":
+                kode_kls_kur = ronin_ipa
+                column_order = column_order_ronin_ipa
+            elif KELAS == "RONIN IPS" and KURIKULUM == "RONIN":
+                kode_kls_kur = ronin_ips
+                column_order = column_order_ronin_ips
+
+            result_filtered = result[result['kode_paket'].isin(kode_kls_kur)]
             result_filtered.drop_duplicates(
-                subset=['nama', 'kode'], keep='first', inplace=True)
+                subset=['name', 'kode_paket'], keep='first', inplace=True)
 
-            # Menggunakan pivot_table untuk menjadikan konten kolom 'studi' sebagai header dan menghilangkan duplikat
+            # Menggunakan pivot_table untuk menjadikan konten kolom 'kode_paket' sebagai header dan menghilangkan duplikat
             result_pivot = pd.pivot_table(result_filtered, index=[
-                'nama', 'nonf', 'kd_lok', 'nama_sklh', 'kelas', 'idtahun'], columns='kode', values='jml_benar', aggfunc='first')
+                'name', 'no_nf', 'lokasi_id', 'sekolah', 'kelas_id', 'tahun_ajaran'], columns='kode_paket', values='jumlah_benar', aggfunc='first')
             result_pivot.reset_index(inplace=True)  # Mengatur ulang indeks
 
             # Ubah nama kolom
             result_pivot = result_pivot.rename(
-                columns={'nama': 'NAMA', 'nonf': 'NONF', 'kd_lok': 'KD_LOK', 'nama_sklh': 'NAMA_SKLH', 'kelas': 'KELAS', 'idtahun': 'IDTAHUN',
-                         'L9QDN296': 'IND_4SD', 'L9QDPSOV': 'ENG_4SD', 'L9QDR0MB': 'IPA_4SD', 'L9QDTU4F': 'IPS_4SD', 'L9QDEBOG': 'MAT_4SD',
-                         'L9RTK7OI': 'IND_6SD', 'L9RTZ866': 'ENG_6SD', 'L9RU3QPK': 'IPA_6SD', 'L9RU68E6': 'IPS_6SD', 'L9RTIN0I': 'MAT_6SD',
-                         'L9S0I3KJ': 'IND_7SMP', 'L9S0JWQ7': 'ENG_7SMP', 'L9S0RALP': 'IPA_7SMP', 'L9S0T6ZB': 'IPS_7SMP', 'L9S0GWBA': 'MAT_7SMP',
-                         'L9S25VBP': 'IND_7KM', 'L9S29Q7F': 'ENG_7KM', 'L9S2B5X0': 'IPA_7KM', 'L9S2L61D': 'IPS_7KM', 'L9S23TZT': 'MAT_7KM',
-                         'L9SDDA9Y': 'IND_8SMP', 'L9SEQUFL': 'ENG_8SMP', 'L9SF4AIK': 'IPA_8SMP', 'L9SFJCOV': 'IPS_8SMP', 'L9SCVUO7': 'MAT_8SMP',
-                         'L9TFIGFW': 'IND_9SMP', 'L9TFMTCY': 'ENG_9SMP', 'L9TFOLX9': 'IPA_9SMP', 'L9TFPLR0': 'IPS_9SMP', 'L9TFA2OM': 'MAT_9SMP',
-                         'L9QM92BE': 'IND_4KM', 'L9QMB382': 'ENG_4KM', 'L9QMC1VY': 'IPAS_4KM', 'L9QM7CXT': 'MAT_4KM',
-                         'L9QO7IZ0': 'IND_5SD', 'L9QODV90': 'IPA_5SD', 'L9QOFGPQ': 'IPS_5SD', 'L9QO1SVL': 'MAT_5SD',
-                         'L9W3ARNP': 'IND_10IPS', 'L9W4T0HB': 'ENG_10IPS', 'L9W5HFLP': 'EKO_10IPS', 'L9W55RF5': 'GEO_10IPS', 'L9W29MFV': 'MAT_10IPS', 'L9W3DYM4': 'SEJ_10IPS', 'L9W2PTDI': 'SOS_10IPS',
-                         'L9W9F1TU': 'IND_11IPS', 'L9W9S6O2': 'ENG_11IPS', 'L9WG7JI0': 'EKO_11IPS', 'L9WFT052': 'GEO_11IPS', 'L9W7P7DY': 'MAT_11IPS', 'L9WA45A3': 'SEJ_11IPS', 'L9WGOT8D': 'SOS_11IPS',
-                         'LADJHJKV': 'IND_10KM', 'LADJDN8W': 'ENG_10KM', 'L9W79KVQ': 'IPA_10KM', 'L9W68CVB': 'MAT_10KM',
-                         'LADYWD3B': 'MAT_PPLS_IPS', 'L9XX80UB': 'SEJ_PPLS_IPS', 'L9XXDA0R': 'SOS_PPLS_IPS', 'L9XXB61J': 'EKO_PPLS_IPS', 'L9XX8YW7': 'GEO_PPLS_IPS',
-                         'L9W5R2GE': 'FIS_10IPA', 'L9W5BU0N': 'BIO_10IPA', 'L9W5TEF3': 'KIM_10IPA', 'L9W9LKWO': 'MAT_10IPA',
-                         'L9W7OZR3': 'FIS_11IPA', 'L9W7DUG4': 'BIO_11IPA', 'L9W8IP45': 'KIM_11IPA', 'L9W5YBZA': 'MAT_11IPA',
-                         'L9XX15SF': 'FIS_PPLS_IPA', 'L9XWZGSI': 'BIO_PPLS_IPA', 'L9XX2JEB': 'KIM_PPLS_IPA', 'L9XWY65D': 'MAT_PPLS_IPA'
-                         })
+                columns={'name': 'NAMA', 'no_nf': 'NONF', 'lokasi_id': 'KD_LOK', 'sekolah': 'NAMA_SKLH', 'kelas_id': 'KELAS', 'tahun_ajaran': 'IDTAHUN',
+                         'M4d1O'+toUmum_tahun+'K13': 'MAT_4SD', 'I4d1O'+toUmum_tahun+'K13': 'IND_4SD', 'E4d1O'+toUmum_tahun+'K13': 'ENG_4SD', 'A4d1O'+toUmum_tahun+'K13': 'IPA_4SD', 'Z4d1O'+toUmum_tahun+'K13': 'IPS_4SD',
+                         'M5d1O'+toUmum_tahun+'K13': 'MAT_5SD', 'I5d1O'+toUmum_tahun+'K13': 'IND_5SD', 'E5d1O'+toUmum_tahun+'K13': 'ENG_5SD', 'A5d1O'+toUmum_tahun+'K13': 'IPA_5SD', 'Z5d1O'+toUmum_tahun+'K13': 'IPS_5SD',
+                         'M6d1O'+toUmum_tahun+'K13': 'MAT_6SD', 'I6d1O'+toUmum_tahun+'K13': 'IND_6SD', 'E6d1O'+toUmum_tahun+'K13': 'ENG_6SD', 'A6d1O'+toUmum_tahun+'K13': 'IPA_6SD', 'Z6d1O'+toUmum_tahun+'K13': 'IPS_6SD',
+                         'M1p1O'+toUmum_tahun+'K13': 'MAT_7SMP', 'I1p1O'+toUmum_tahun+'K13': 'IND_7SMP', 'E1p1O'+toUmum_tahun+'K13': 'ENG_7SMP', '417'+toBersama+'A1'+tahun: 'IPA_7SMP', '417'+toBersama+'S1'+tahun: 'IPS_7SMP',
+                         'M2p1O'+toUmum_tahun+'K13': 'MAT_8SMP', 'I2p1O'+toUmum_tahun+'K13': 'IND_8SMP', 'E2p1O'+toUmum_tahun+'K13': 'ENG_8SMP', '517'+toBersama+'A1'+tahun: 'IPA_8SMP', '517'+toBersama+'S1'+tahun: 'IPS_8SMP',
+                         'M3p1O'+toUmum_tahun+'K13': 'MAT_9SMP', 'I3p1O'+toUmum_tahun+'K13': 'IND_9SMP', 'E3p1O'+toUmum_tahun+'K13': 'ENG_9SMP', '617'+toBersama+'A1'+tahun: 'IPA_9SMP', '617'+toBersama+'S1'+tahun: 'IPS_9SMP',
+                         'M4a1O'+toUmum_tahun+'K13': 'MAT_10_IPA', 'F4a1O'+toUmum_tahun+'K13': 'FIS_10_IPA', 'K4a1O'+toUmum_tahun+'K13': 'KIM_10_IPA', 'B4a1O'+toUmum_tahun+'K13': 'BIO_10_IPA',
+                         'M5a1O'+toUmum_tahun+'K13': 'MAT_11_IPA', 'F5a1O'+toUmum_tahun+'K13': 'FIS_11_IPA', 'K5a1O'+toUmum_tahun+'K13': 'KIM_11_IPA', 'B5a1O'+toUmum_tahun+'K13': 'BIO_11_IPA',
+                         'M4s1O'+toUmum_tahun+'K13': 'MAT_10_IPS', 'I4s1O'+toUmum_tahun+'K13': 'IND_10_IPS', 'E4s1O'+toUmum_tahun+'K13': 'ENG_10_IPS', 'S4s1O'+toUmum_tahun+'K13': 'SEJ_10_IPS', 'G4s1O'+toUmum_tahun+'K13': 'GEO_10_IPS', 'O4s1O'+toUmum_tahun+'K13': 'EKO_10_IPS', 'L4s1O'+toUmum_tahun+'K13': 'SOS_10_IPS',
+                         'M5s1O'+toUmum_tahun+'K13': 'MAT_11_IPS', 'I5s1O'+toUmum_tahun+'K13': 'IND_11_IPS', 'E5s1O'+toUmum_tahun+'K13': 'ENG_11_IPS', 'S5s1O'+toUmum_tahun+'K13': 'SEJ_11_IPS', 'G5s1O'+toUmum_tahun+'K13': 'GEO_11_IPS', 'O5s1O'+toUmum_tahun+'K13': 'EKO_11_IPS', 'L5s1O'+toUmum_tahun+'K13': 'SOS_11_IPS',
+                         'M4d1O'+toUmum_tahun+'KM': 'MAT_4SD', 'I4d1O'+toUmum_tahun+'KM': 'IND_4SD', 'E4d1O'+toUmum_tahun+'KM': 'ENG_4SD', '127'+toBersama+'D1'+tahun: 'IPAS_4SD',
+                         'M5d1O'+toUmum_tahun+'KM': 'MAT_5SD', 'I5d1O'+toUmum_tahun+'KM': 'IND_5SD', 'E5d1O'+toUmum_tahun+'KM': 'ENG_5SD', '227'+toBersama+'D1'+tahun: 'IPAS_5SD',
+                         'M1p1O'+toUmum_tahun+'KM': 'MAT_7SMP', 'I1p1O'+toUmum_tahun+'KM': 'IND_7SMP', 'E1p1O'+toUmum_tahun+'KM': 'ENG_7SMP', '429'+toBersama+'A1'+tahun: 'IPA_7SMP', '429'+toBersama+'S1'+tahun: 'IPS_7SMP',
+                         'M2p1O'+toUmum_tahun+'KM': 'MAT_8SMP', 'I2p1O'+toUmum_tahun+'KM': 'IND_8SMP', 'E2p1O'+toUmum_tahun+'KM': 'ENG_8SMP', '529'+toBersama+'A1'+tahun: 'IPA_8SMP', '529'+toBersama+'S1'+tahun: 'IPS_8SMP', 'M2p1O'+toUnik_tahun+'KM': 'MAT_SB_8SMP',
+                         'M3p1O'+toUmum_tahun+'KM': 'MAT_9SMP', 'I3p1O'+toUmum_tahun+'KM': 'IND_9SMP', 'E3p1O'+toUmum_tahun+'KM': 'ENG_9SMP', '429'+toBersama+'A1'+tahun: 'IPA_7SMP', '429'+toBersama+'S1'+tahun: 'IPS_7SMP',
+                         'M9a1O'+toUmum_tahun+'PPLS': 'MAT_PPLS_IPA', 'F9a1O'+toUmum_tahun+'PPLS': 'FIS_PPLS_IPA', 'K9a1O'+toUmum_tahun+'PPLS': 'KIM_PPLS_IPA', 'B9a1O'+toUmum_tahun+'PPLS': 'BIO_PPLS_IPA',
+                         'G9s1O'+toUmum_tahun+'PPLS': 'GEO_PPLS_IPS', 'O9s1O'+toUmum_tahun+'PPLS': 'EKO_PPLS_IPS', 'S9s1O'+toUmum_tahun+'PPLS': 'SEJ_PPLS_IPS', 'L9s1O'+toUmum_tahun+'PPLS': 'SOS_PPLS_IPS'})
 
             result_pivot = result_pivot.reindex(columns=column_order)
 
