@@ -39,7 +39,7 @@ if authentication_status:
         selected_file = option_menu(
             menu_title="Pilih file:",
             options=["Pivot PAS",
-                     "Nilai Std. SD (K13), SMP (K13-KM)",
+                     "Nilai Std. SD (K13), SMP (K13-KM), 10 (KM)",
                      "Nilai Std. 8 SMP (KM-MTK SB)",
                      "Nilai Std. SD (KM)",
                      "Nilai Std. All IPA",
@@ -572,7 +572,7 @@ if authentication_status:
                 bytes_data = f.read()
             st.download_button(label="Unduh File", data=bytes_data,
                                file_name=path_file)
-    if selected_file == "Nilai Std. SD (KM)(K13), SMP (K13-KM), 10 (KM)":
+    if selected_file == "Nilai Std. SD (K13), SMP (K13-KM), 10 (KM)":
         # menghilangkan hamburger
         st.markdown("""
         <style>
@@ -590,7 +590,7 @@ if authentication_status:
         image = Image.open('logo resmi nf resize.png')
         st.image(image)
 
-        st.title("Olah Nilai Standar K13")
+        st.title("Olah Nilai Standar")
 
         # url = 'https://docs.google.com/document/d/1xjkgcq86pMfLieqwBGTmV0kB6mWO_R1L7042razShlk/edit?usp=sharing'
 
@@ -598,7 +598,7 @@ if authentication_status:
         # if st.button("Panduan"):
         #     webbrowser.open_new_tab(url)
 
-        st.header("SD (K13)-SMP (K13-KM)")
+        st.header("SD (K13)-SMP (K13-KM), 10 (KM)")
 
         col6 = st.container()
 
