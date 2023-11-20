@@ -2015,7 +2015,7 @@ if authentication_status:
 
             st.warning(
                 "Buka file unduhan, klik 'Enable Editing' dan 'Save'")
-    if selected_file == "Nilai Std. SD (KM)":
+    if selected_file == "Nilai Std. All IPA":
         # menghilangkan hamburger
         st.markdown("""
         <style>
