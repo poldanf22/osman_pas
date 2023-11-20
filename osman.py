@@ -383,26 +383,26 @@ if authentication_status:
         url_contoh_detail ='https://docs.google.com/spreadsheets/d/1hq9P44M9P51GrJn07DyWsHA1xKFj--dG/edit?usp=sharing&ouid=100219691055398475739&rtpof=true&sd=true'
         uploaded_detail = st.file_uploader(
             'Letakkan file excel Detail Siswa', type='xlsx')
-        url_contoh_to_pts = 'https://docs.google.com/spreadsheets/d/1K-bWwSvkd0fgJ-xVtn-CWQcZH_-MoM8F/edit?usp=sharing&ouid=100219691055398475739&rtpof=true&sd=true'
-        uploaded_to_pts = st.file_uploader(
-            'Letakkan file excel TO PTS', type='xlsx')
+        url_contoh_to_pas = 'https://docs.google.com/spreadsheets/d/1K-bWwSvkd0fgJ-xVtn-CWQcZH_-MoM8F/edit?usp=sharing&ouid=100219691055398475739&rtpof=true&sd=true'
+        uploaded_to_pas = st.file_uploader(
+            'Letakkan file excel TO PAS', type='xlsx')
 
         detail = None
-        to_pts = None
+        to_pas = None
 
         if uploaded_detail is not None:
             detail = pd.read_excel(uploaded_detail)
 
-        if uploaded_to_pts is not None:
-            to_pts = pd.read_excel(uploaded_to_pts)
+        if uploaded_to_pas is not None:
+            to_pas = pd.read_excel(uploaded_to_pas)
 
-        if detail is not None and to_pts is not None:
+        if detail is not None and to_pas is not None:
             detail = detail.drop(['user_id', 'is_test_access', 'no_hp', 'lokasi_id', 'jenjang_id',
                                   'riwayat_jenjang', 'jenjang_dipilih_id', 'kode_level', 'kode_kelas',
                                   'tempat_lahir', 'tanggal_lahir', 'semester', 'tahun_ajar',
                                   'program', 'pin', 'join_skolla', 'created_at', 'updated_at'], axis=1)  # Menghilangkan kolom sebelum dilakukan merge
 
-            result = pd.merge(detail, to_pts[['no_nf', 'kode_paket', 'tahun_ajaran', 'kelas_id',
+            result = pd.merge(detail, to_pas[['no_nf', 'kode_paket', 'tahun_ajaran', 'kelas_id',
                                               'lokasi_id', 'jumlah_benar']], on='no_nf', how='left')
             # Menghapus nilai NaN dari kolom 'kode_paket'
             result = result.dropna(subset=['kode_paket'])
@@ -546,7 +546,7 @@ if authentication_status:
             penilaian = PENILAIAN.lower()
 
             path_file = f"{kelas}_{penilaian}_{semester}_{kurikulum}_{tahun}_pivot.xlsx"
-            
+
             # Simpan file ke direktori temporer
             temp_dir = tempfile.gettempdir()
             file_path = temp_dir + '/' + path_file
