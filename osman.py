@@ -3381,7 +3381,7 @@ if authentication_status:
         with col8:
             PENILAIAN = st.selectbox(
                 "PENILAIAN",
-                ("--Pilih Penilaian--", "PENILAIAN TENGAH SEMESTER", "PENILAIAN AKHIR SEMESTER", "PENILAIAN AKHIR TAHUN"))
+                ("--Pilih Penilaian--", "PENILAIAN AKHIR SEMESTER"))
 
         col9 = st.container()
 
