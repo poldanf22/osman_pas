@@ -363,7 +363,7 @@ if authentication_status:
         with col2:
             KELAS = st.selectbox(
                 "KELAS",
-                ("--Pilih Kelas--", "4 SD", "5 SD", "6 SD", "7 SMP", "8 SMP", "9 SMP", "10 IPA", "10 IPS", "10 SMA", "11 IPA", "11 IPS", "11 SMA PIL MAT", "11 SMA PIL BIO", "11 SMA PIL FIS", "11 SMA PIL KIM", "11 SMA PIL SEJ", "11 SMA PIL GEO", "11 SMA PIL EKO", "11 SMA PIL SOS", "11 SMA PIL ANT", "PPLS IPA", "PPLS IPS", "RONIN IPA", "RONIN IPS"))
+                ("--Pilih Kelas--", "4 SD", "5 SD", "6 SD", "7 SMP", "8 SMP", "8 SMP SB", "9 SMP", "10 IPA", "10 IPS", "10 SMA", "11 IPA", "11 IPS", "11 SMA PIL MAT", "11 SMA PIL BIO", "11 SMA PIL FIS", "11 SMA PIL KIM", "11 SMA PIL SEJ", "11 SMA PIL GEO", "11 SMA PIL EKO", "11 SMA PIL SOS", "11 SMA PIL ANT", "PPLS IPA", "PPLS IPS", "RONIN IPA", "RONIN IPS"))
 
         col3 = st.container()
         with col3:
@@ -451,6 +451,9 @@ if authentication_status:
             elif KELAS == "8 SMP" and KURIKULUM == "KM":
                 kode_kls_kur = km_8smp
                 column_order = column_order_km_8smp
+            elif KELAS == "8 SMP SB" and KURIKULUM == "KM":
+                kode_kls_kur = km_8smp_sb
+                column_order = column_order_km_8smp_sb
             elif KELAS == "9 SMP" and KURIKULUM == "KM":
                 kode_kls_kur = km_9smp
                 column_order = column_order_km_9smp
