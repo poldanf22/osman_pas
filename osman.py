@@ -5364,7 +5364,7 @@ if authentication_status:
 
             st.warning(
                 "Buka file unduhan, klik 'Enable Editing' dan 'Save'")
-    if selected_file == "Nilai Std. SD (KM), RONIN IPS":
+    if selected_file == "Nilai Std. PPLS, RONIN IPS":
         # menghilangkan hamburger
         st.markdown("""
         <style>
@@ -6816,14 +6816,14 @@ if authentication_status:
         st.image(image)
 
         st.title("Olah Nilai Standar KM")
-        st.header("4 SD")
+        st.header("4-5 SD")
 
         col6 = st.container()
 
         with col6:
             KELAS = st.selectbox(
                 "KELAS",
-                ("--Pilih Kelas--", "4 SD KM"))
+                ("--Pilih Kelas--", "4 SD KM", "5 SD KM"))
 
         col7 = st.container()
 
