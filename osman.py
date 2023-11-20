@@ -8019,7 +8019,7 @@ if authentication_status:
 
             st.warning(
                 "Buka file unduhan, klik 'Enable Editing' dan 'Save'")
-    if selected_file == "Nilai Std. 5SD":
+    if selected_file == "Nilai Std. 11 (KM) PIL. MTK":
         # menghilangkan hamburger
         st.markdown("""
         <style>
@@ -9345,7 +9345,7 @@ if authentication_status:
 
             st.warning(
                 "Buka file unduhan, klik 'Enable Editing' dan 'Save'")
-    if selected_file == "Nilai Std. 10KM":
+    if selected_file == "Nilai Std. 11 (KM) PIL. BIO":
         # menghilangkan hamburger
         st.markdown("""
         <style>
