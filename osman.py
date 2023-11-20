@@ -532,10 +532,10 @@ if authentication_status:
                          'F5x1O'+toBersama_tahun+'KM2': 'PIL_FIS_11SMA', 'K5x1O'+toUnikBK_tahun+'KM2': 'PIL_KIM_11SMA', 'B5x1O'+toUnikBK_tahun+'KM2': 'PIL_BIO_11SMA',
                          'S5x1O'+toBersama_tahun+'KM2': 'PIL_SEJ_11SMA', 'G5x1O'+toBersama_tahun+'KM2': 'PIL_GEO_11SMA', 'O5x1O'+toBersama_tahun+'KM2': 'PIL_EKO_11SMA', 'L5x1O'+toBersama_tahun+'KM2': 'PIL_SOS_11SMA', 'N5x1O'+toBersama_tahun+'KM2': 'PIL_ANT_11SMA', 
                         #  ppls ronin
-                         'M9a1O'+toUmum_tahun+'PPLS': 'MAT_PPLS_IPA', 'F9a1O'+toUmum_tahun+'PPLS': 'FIS_PPLS_IPA', 'K9a1O'+toUmum_tahun+'PPLS': 'KIM_PPLS_IPA', 'B9a1O'+toUmum_tahun+'PPLS': 'BIO_PPLS_IPA',
-                         'G9s1O'+toUmum_tahun+'PPLS': 'GEO_PPLS_IPS', 'O9s1O'+toUmum_tahun+'PPLS': 'EKO_PPLS_IPS', 'S9s1O'+toUmum_tahun+'PPLS': 'SEJ_PPLS_IPS', 'L9s1O'+toUmum_tahun+'PPLS': 'SOS_PPLS_IPS',
-                         'M8a1O'+toUmum_tahun+'RONIN': 'MAT_RONIN_IPA', 'F8a1O'+toUmum_tahun+'RONIN': 'FIS_RONIN_IPA', 'K8a1O'+toUmum_tahun+'RONIN': 'KIM_RONIN_IPA', 'B8a1O'+toUmum_tahun+'RONIN': 'BIO_RONIN_IPA',
-                         'G8s1O'+toUmum_tahun+'RONIN': 'GEO_RONIN_IPS', 'O8s1O'+toUmum_tahun+'RONIN': 'EKO_RONIN_IPS', 'S8s1O'+toUmum_tahun+'RONIN': 'SEJ_RONIN_IPS', 'L8s1O'+toUmum_tahun+'RONIN': 'SOS_RONIN_IPS'})
+                         'M9a1O'+toBersama_tahun+'PPLS': 'MAT_PPLS_IPA', 'F9a1O'+toBersama_tahun+'PPLS': 'FIS_PPLS_IPA', 'K9a1O'+toBersama_tahun+'PPLS': 'KIM_PPLS_IPA', 'B9a1O'+toBersama_tahun+'PPLS': 'BIO_PPLS_IPA',
+                         'G9s1O'+toBersama_tahun+'PPLS': 'GEO_PPLS_IPS', 'O9s1O'+toBersama_tahun+'PPLS': 'EKO_PPLS_IPS', 'S9s1O'+toBersama_tahun+'PPLS': 'SEJ_PPLS_IPS', 'L9s1O'+toBersama_tahun+'PPLS': 'SOS_PPLS_IPS',
+                         'M8a1O'+toBersama_tahun+'RONIN': 'MAT_RONIN_IPA', 'F8a1O'+toBersama_tahun+'RONIN': 'FIS_RONIN_IPA', 'K8a1O'+toBersama_tahun+'RONIN': 'KIM_RONIN_IPA', 'B8a1O'+toBersama_tahun+'RONIN': 'BIO_RONIN_IPA',
+                         'G8s1O'+toBersama_tahun+'RONIN': 'GEO_RONIN_IPS', 'O8s1O'+toBersama_tahun+'RONIN': 'EKO_RONIN_IPS', 'S8s1O'+toBersama_tahun+'RONIN': 'SEJ_RONIN_IPS', 'L8s1O'+toBersama_tahun+'RONIN': 'SOS_RONIN_IPS'})
 
             result_pivot = result_pivot.reindex(columns=column_order)
 
