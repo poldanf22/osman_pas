@@ -2062,7 +2062,7 @@ if authentication_status:
         with col9:
             KURIKULUM = st.selectbox(
                 "KURIKULUM",
-                ("--Pilih Kurikulum--", "K13", ""))
+                ("--Pilih Kurikulum--", "K13", "PPLS", "RONIN"))
 
         TAHUN = st.text_input("Masukkan Tahun Ajaran",
                               placeholder="contoh: 2022-2023")
