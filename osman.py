@@ -178,7 +178,7 @@ if authentication_status:
         ppls_ipa_kim = 'K9a1O'+toUmum_tahun+'PPLS'
         ppls_ipa = [ppls_ipa_mat, ppls_ipa_bio,
                        ppls_ipa_fis, ppls_ipa_kim]
-        column_order_k13_ppls_ipa = ['IDTAHUN', 'NAMA', 'NONF', 'KELAS', 'NAMA_SKLH', 'KD_LOK', 'MAT_PPLS_IPA', 'FIS_PPLS_IPA',
+        column_order_ppls_ipa = ['IDTAHUN', 'NAMA', 'NONF', 'KELAS', 'NAMA_SKLH', 'KD_LOK', 'MAT_PPLS_IPA', 'FIS_PPLS_IPA',
                                     'KIM_PPLS_IPA', 'BIO_PPLS_IPA']
 
         # ppls ips
