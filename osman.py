@@ -290,7 +290,7 @@ if authentication_status:
         km_11sma_pil_mat = [km_11sma_mat_wjb, km_11sma_ind,
                    km_11sma_eng, km_11sma_mat_pil]
         column_order_km_11sma_pil_mat = ['IDTAHUN', 'NAMA', 'NONF', 'KELAS', 'NAMA_SKLH', 'KD_LOK', 'MAT_WJB_11SMA', 'IND_11SMA',
-                                'ENG_11SMA', 'PIL_MTK_11SMA']
+                                'ENG_11SMA', 'PIL_MAT_11SMA']
 
         # 11sma km bio
         km_11sma_bio = 'B5x1O'+toUnikBK_tahun+'KM2'
