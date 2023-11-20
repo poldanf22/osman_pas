@@ -198,7 +198,7 @@ if authentication_status:
         ronin_ipa_kim = 'K8a1O'+toUmum_tahun+'RONIN'
         ronin_ipa = [ronin_ipa_mat, ronin_ipa_bio,
                        ronin_ipa_fis, ronin_ipa_kim]
-        column_order_k13_ronin_ipa = ['IDTAHUN', 'NAMA', 'NONF', 'KELAS', 'NAMA_SKLH', 'KD_LOK', 'MAT_RONIN_IPA', 'FIS_RONIN_IPA',
+        column_order_ronin_ipa = ['IDTAHUN', 'NAMA', 'NONF', 'KELAS', 'NAMA_SKLH', 'KD_LOK', 'MAT_RONIN_IPA', 'FIS_RONIN_IPA',
                                     'KIM_RONIN_IPA', 'BIO_RONIN_IPA']
 
         # ronin ips
