@@ -246,7 +246,7 @@ if authentication_status:
         km_8smp_mat = 'M2p1O'+toUmum_tahun+'KM'
         km_8smp_ind = 'I2p1O'+toUmum_tahun+'KM'
         km_8smp_eng = 'E2p1O'+toUmum_tahun+'KM'
-        km_8smp_ipa = 'B2p1O'+toUmum_tahun+'KM'
+        km_8smp_ipa = '529'+toBersama+'A1'+tahun
         km_8smp_ips = '529'+toBersama+'S1'+tahun
         km_8smp = [km_8smp_mat, km_8smp_ind,
                    km_8smp_eng, km_8smp_ipa, km_8smp_ips]
