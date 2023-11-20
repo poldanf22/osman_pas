@@ -572,7 +572,7 @@ if authentication_status:
                 bytes_data = f.read()
             st.download_button(label="Unduh File", data=bytes_data,
                                file_name=path_file)
-    if selected_file == "Nilai Std. SD (K13), SMP (K13-KM)":
+    if selected_file == "Nilai Std. SD (KM)(K13), SMP (K13-KM), 10 (KM)":
         # menghilangkan hamburger
         st.markdown("""
         <style>
@@ -605,7 +605,7 @@ if authentication_status:
         with col6:
             KELAS = st.selectbox(
                 "KELAS",
-                ("--Pilih Kelas--", "4 SD", "5 SD", "6 SD", "7 SMP", "8 SMP", "9 SMP"))
+                ("--Pilih Kelas--", "4 SD", "5 SD", "6 SD", "7 SMP", "8 SMP", "9 SMP", "10 SMA"))
 
         col7 = st.container()
 
@@ -2015,7 +2015,7 @@ if authentication_status:
 
             st.warning(
                 "Buka file unduhan, klik 'Enable Editing' dan 'Save'")
-    if selected_file == "Nilai Std. All IPA":
+    if selected_file == "Nilai Std. SD (KM)":
         # menghilangkan hamburger
         st.markdown("""
         <style>
@@ -3341,7 +3341,7 @@ if authentication_status:
 
             st.warning(
                 "Buka file unduhan, klik 'Enable Editing' dan 'Save'")
-    if selected_file == "Nilai Std. 10, 11 IPS":
+    if selected_file == "Nilai Std. SD (KM)":
         # menghilangkan hamburger
         st.markdown("""
         <style>
@@ -5364,7 +5364,7 @@ if authentication_status:
 
             st.warning(
                 "Buka file unduhan, klik 'Enable Editing' dan 'Save'")
-    if selected_file == "Nilai Std. PPLS, RONIN IPS":
+    if selected_file == "Nilai Std. SD (KM), RONIN IPS":
         # menghilangkan hamburger
         st.markdown("""
         <style>
@@ -6797,7 +6797,7 @@ if authentication_status:
 
             st.warning(
                 "Buka file unduhan, klik 'Enable Editing' dan 'Save'")
-    if selected_file == "Nilai Std. 4KM":
+    if selected_file == "Nilai Std. SD (KM)":
         # menghilangkan hamburger
         st.markdown("""
         <style>
