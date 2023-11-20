@@ -39,13 +39,21 @@ if authentication_status:
         selected_file = option_menu(
             menu_title="Pilih file:",
             options=["Pivot PAS",
-                     "Nilai Std. SD, SMP",
+                     "Nilai Std. SD (K13), SMP (K13-KM)",
+                     "Nilai Std. 8 SMP (KM-MTK SB)",
+                     "Nilai Std. SD (KM)",
                      "Nilai Std. All IPA",
                      "Nilai Std. 10, 11 IPS",
                      "Nilai Std. PPLS, RONIN IPS",
-                     "Nilai Std. 4KM",
-                     "Nilai Std. 5SD",
-                     "Nilai Std. 10KM"],
+                     "Nilai Std. 11 (KM) PIL. MTK",
+                     "Nilai Std. 11 (KM) PIL. BIO",
+                     "Nilai Std. 11 (KM) PIL. FIS",
+                     "Nilai Std. 11 (KM) PIL. KIM",
+                     "Nilai Std. 11 (KM) PIL. SEJ",
+                     "Nilai Std. 11 (KM) PIL. GEO",
+                     "Nilai Std. 11 (KM) PIL. EKO",
+                     "Nilai Std. 11 (KM) PIL. SOS",
+                     "Nilai Std. 11 (KM) PIL. ANT"],
         )
     toUmum_tahun = "0223-24"
     toUnik_tahun = "0423-24"
@@ -564,7 +572,7 @@ if authentication_status:
                 bytes_data = f.read()
             st.download_button(label="Unduh File", data=bytes_data,
                                file_name=path_file)
-    if selected_file == "Nilai Std. SD, SMP":
+    if selected_file == "Nilai Std. SD (K13), SMP (K13-KM)":
         # menghilangkan hamburger
         st.markdown("""
         <style>
@@ -590,14 +598,14 @@ if authentication_status:
         # if st.button("Panduan"):
         #     webbrowser.open_new_tab(url)
 
-        st.header("SD-SMP (EXCLUDE: 5 SD)")
+        st.header("SD (K13)-SMP (K13-KM)")
 
         col6 = st.container()
 
         with col6:
             KELAS = st.selectbox(
                 "KELAS",
-                ("--Pilih Kelas--", "4 SD", "6 SD", "7 SMP", "8 SMP", "9 SMP"))
+                ("--Pilih Kelas--", "4 SD", "5 SD", "6 SD", "7 SMP", "8 SMP", "9 SMP"))
 
         col7 = st.container()
 
