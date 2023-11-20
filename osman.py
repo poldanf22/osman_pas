@@ -192,20 +192,20 @@ if authentication_status:
                                  'EKO_PPLS_IPS', 'SEJ_PPLS_IPS', 'SOS_PPLS_IPS',]
         
         # ronin ipa
-        ronin_ipa_mat = 'M8a1O'+toUmum_tahun+'RONIN'
-        ronin_ipa_bio = 'B8a1O'+toUmum_tahun+'RONIN'
-        ronin_ipa_fis = 'F8a1O'+toUmum_tahun+'RONIN'
-        ronin_ipa_kim = 'K8a1O'+toUmum_tahun+'RONIN'
+        ronin_ipa_mat = 'M8a1E'+toBersama_tahun+'RONIN'
+        ronin_ipa_bio = 'B8a1E'+toBersama_tahun+'RONIN'
+        ronin_ipa_fis = 'F8a1E'+toBersama_tahun+'RONIN'
+        ronin_ipa_kim = 'K8a1E'+toBersama_tahun+'RONIN'
         ronin_ipa = [ronin_ipa_mat, ronin_ipa_bio,
                        ronin_ipa_fis, ronin_ipa_kim]
         column_order_ronin_ipa = ['IDTAHUN', 'NAMA', 'NONF', 'KELAS', 'NAMA_SKLH', 'KD_LOK', 'MAT_RONIN_IPA', 'FIS_RONIN_IPA',
                                     'KIM_RONIN_IPA', 'BIO_RONIN_IPA']
 
         # ronin ips
-        ronin_ips_geo = 'G8s1O'+toUmum_tahun+'RONIN'
-        ronin_ips_eko = 'O8s1O'+toUmum_tahun+'RONIN'
-        ronin_ips_sej = 'S8s1O'+toUmum_tahun+'RONIN'
-        ronin_ips_sos = 'L8s1O'+toUmum_tahun+'RONIN'
+        ronin_ips_geo = 'G8s1E'+toBersama_tahun+'RONIN'
+        ronin_ips_eko = 'O8s1E'+toBersama_tahun+'RONIN'
+        ronin_ips_sej = 'S8s1E'+toBersama_tahun+'RONIN'
+        ronin_ips_sos = 'L8s1E'+toBersama_tahun+'RONIN'
         ronin_ips = [ronin_ips_geo, ronin_ips_eko,
                     ronin_ips_sej, ronin_ips_sos]
         column_order_ronin_ips = ['IDTAHUN', 'NAMA', 'NONF', 'KELAS', 'NAMA_SKLH', 'KD_LOK', 'GEO_RONIN_IPS',
@@ -534,8 +534,8 @@ if authentication_status:
                         #  ppls ronin
                          'M9a1O'+toBersama_tahun+'PPLS': 'MAT_PPLS_IPA', 'F9a1O'+toBersama_tahun+'PPLS': 'FIS_PPLS_IPA', 'K9a1O'+toBersama_tahun+'PPLS': 'KIM_PPLS_IPA', 'B9a1O'+toBersama_tahun+'PPLS': 'BIO_PPLS_IPA',
                          'G9s1O'+toBersama_tahun+'PPLS': 'GEO_PPLS_IPS', 'O9s1O'+toBersama_tahun+'PPLS': 'EKO_PPLS_IPS', 'S9s1O'+toBersama_tahun+'PPLS': 'SEJ_PPLS_IPS', 'L9s1O'+toBersama_tahun+'PPLS': 'SOS_PPLS_IPS',
-                         'M8a1O'+toBersama_tahun+'RONIN': 'MAT_RONIN_IPA', 'F8a1O'+toBersama_tahun+'RONIN': 'FIS_RONIN_IPA', 'K8a1O'+toBersama_tahun+'RONIN': 'KIM_RONIN_IPA', 'B8a1O'+toBersama_tahun+'RONIN': 'BIO_RONIN_IPA',
-                         'G8s1O'+toBersama_tahun+'RONIN': 'GEO_RONIN_IPS', 'O8s1O'+toBersama_tahun+'RONIN': 'EKO_RONIN_IPS', 'S8s1O'+toBersama_tahun+'RONIN': 'SEJ_RONIN_IPS', 'L8s1O'+toBersama_tahun+'RONIN': 'SOS_RONIN_IPS'})
+                         'M8a1E'+toBersama_tahun+'RONIN': 'MAT_RONIN_IPA', 'F8a1E'+toBersama_tahun+'RONIN': 'FIS_RONIN_IPA', 'K8a1E'+toBersama_tahun+'RONIN': 'KIM_RONIN_IPA', 'B8a1E'+toBersama_tahun+'RONIN': 'BIO_RONIN_IPA',
+                         'G8s1E'+toBersama_tahun+'RONIN': 'GEO_RONIN_IPS', 'O8s1E'+toBersama_tahun+'RONIN': 'EKO_RONIN_IPS', 'S8s1E'+toBersama_tahun+'RONIN': 'SEJ_RONIN_IPS', 'L8s1E'+toBersama_tahun+'RONIN': 'SOS_RONIN_IPS'})
 
             result_pivot = result_pivot.reindex(columns=column_order)
 
