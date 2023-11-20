@@ -126,46 +126,46 @@ if authentication_status:
                                  'ENG_9SMP', 'IPA_9SMP', 'IPS_9SMP']
         
         # 10 ipa k13
-        k13_10ipa_mat = 'M4a1O'+toUmum_tahun+'K13'
-        k13_10ipa_bio = 'B4a1O'+toUmum_tahun+'K13'
-        k13_10ipa_fis = 'F4a1O'+toUmum_tahun+'K13'
-        k13_10ipa_kim = 'K4a1O'+toUmum_tahun+'K13'
+        k13_10ipa_mat = 'M4a1O'+toBersama_tahun+'K13'
+        k13_10ipa_bio = 'B4a1O'+toBersama_tahun+'K13'
+        k13_10ipa_fis = 'F4a1O'+toBersama_tahun+'K13'
+        k13_10ipa_kim = 'K4a1O'+toBersama_tahun+'K13'
         k13_10ipa = [k13_10ipa_mat, k13_10ipa_bio,
                     k13_10ipa_fis, k13_10ipa_kim]
         column_order_k13_10ipa = ['IDTAHUN', 'NAMA', 'NONF', 'KELAS', 'NAMA_SKLH', 'KD_LOK', 'MAT_10IPA', 'BIO_10IPA',
                                  'FIS_10IPA', 'KIM_10IPA']
         
         # 10sma ips k13
-        k13_10ips_mat = 'M4s1O'+toUmum_tahun+'K13'
-        k13_10ips_sos = 'L4s1O'+toUmum_tahun+'K13'
-        k13_10ips_eng = 'E4s1O'+toUmum_tahun+'K13'
-        k13_10ips_eko = 'O4s1O'+toUmum_tahun+'K13'
-        k13_10ips_ind = 'I4s1O'+toUmum_tahun+'K13'
-        k13_10ips_sej = 'S4s1O'+toUmum_tahun+'K13'
-        k13_10ips_geo = 'G4s1O'+toUmum_tahun+'K13'
+        k13_10ips_mat = 'M4s1O'+toBersama_tahun+'K13'
+        k13_10ips_sos = 'L4s1O'+toBersama_tahun+'K13'
+        k13_10ips_eng = 'E4s1O'+toBersama_tahun+'K13'
+        k13_10ips_eko = 'O4s1O'+toBersama_tahun+'K13'
+        k13_10ips_ind = 'I4s1O'+toBersama_tahun+'K13'
+        k13_10ips_sej = 'S4s1O'+toBersama_tahun+'K13'
+        k13_10ips_geo = 'G4s1O'+toBersama_tahun+'K13'
         k13_10ips = [k13_10ips_mat, k13_10ips_sos, k13_10ips_eng,
                      k13_10ips_eko, k13_10ips_ind, k13_10ips_sej, k13_10ips_geo]
         column_order_k13_10ips = ['IDTAHUN', 'NAMA', 'NONF', 'KELAS', 'NAMA_SKLH', 'KD_LOK', 'MAT_10IPS', 'IND_10IPS',
                                   'ENG_10IPS', 'SEJ_10IPS', 'GEO_10IPS', 'EKO_10IPS', 'SOS_10IPS']
         
         # 11sma ipa k13
-        k13_11ipa_mat = 'M5a1O'+toUmum_tahun+'K13'
-        k13_11ipa_bio = 'B5a1O'+toUmum_tahun+'K13'
-        k13_11ipa_fis = 'F5a1O'+toUmum_tahun+'K13'
-        k13_11ipa_kim = 'K5a1O'+toUmum_tahun+'K13'
+        k13_11ipa_mat = 'M5a1O'+toBersama_tahun+'K13'
+        k13_11ipa_bio = 'B5a1O'+toBersama_tahun+'K13'
+        k13_11ipa_fis = 'F5a1O'+toBersama_tahun+'K13'
+        k13_11ipa_kim = 'K5a1O'+toBersama_tahun+'K13'
         k13_11ipa = [k13_11ipa_mat, k13_11ipa_bio,
                      k13_11ipa_fis, k13_11ipa_kim]
         column_order_k13_11ipa = ['IDTAHUN', 'NAMA', 'NONF', 'KELAS', 'NAMA_SKLH', 'KD_LOK', 'MAT_11IPA', 'FIS_11IPA',
                                   'KIM_11IPA', 'BIO_11IPA']
 
         # 11sma ips k13
-        k13_11ips_mat = 'M5s1O'+toUmum_tahun+'K13'
-        k13_11ips_sos = 'L5s1O'+toUmum_tahun+'K13'
-        k13_11ips_eng = 'E5s1O'+toUmum_tahun+'K13'
-        k13_11ips_eko = 'O5s1O'+toUmum_tahun+'K13'
-        k13_11ips_ind = 'I5s1O'+toUmum_tahun+'K13'
-        k13_11ips_sej = 'S5s1O'+toUmum_tahun+'K13'
-        k13_11ips_geo = 'G5s1O'+toUmum_tahun+'K13'
+        k13_11ips_mat = 'M5s1O'+toBersama_tahun+'K13'
+        k13_11ips_sos = 'L5s1O'+toBersama_tahun+'K13'
+        k13_11ips_eng = 'E5s1O'+toBersama_tahun+'K13'
+        k13_11ips_eko = 'O5s1O'+toBersama_tahun+'K13'
+        k13_11ips_ind = 'I5s1O'+toBersama_tahun+'K13'
+        k13_11ips_sej = 'S5s1O'+toBersama_tahun+'K13'
+        k13_11ips_geo = 'G5s1O'+toBersama_tahun+'K13'
         k13_11ips = [k13_11ips_mat, k13_11ips_sos, k13_11ips_eng,
                      k13_11ips_eko, k13_11ips_ind, k13_11ips_sej, k13_11ips_geo]
         column_order_k13_11ips = ['IDTAHUN', 'NAMA', 'NONF', 'KELAS', 'NAMA_SKLH', 'KD_LOK', 'MAT_11IPS', 'IND_11IPS',
@@ -517,10 +517,10 @@ if authentication_status:
                          'M1p1O'+toUmum_tahun+'K13': 'MAT_7SMP', 'I1p1O'+toUmum_tahun+'K13': 'IND_7SMP', 'E1p1O'+toUmum_tahun+'K13': 'ENG_7SMP', '417'+toBersama+'A1'+tahun: 'IPA_7SMP', '417'+toBersama+'S1'+tahun: 'IPS_7SMP',
                          'M2p1O'+toUmum_tahun+'K13': 'MAT_8SMP', 'I2p1O'+toUmum_tahun+'K13': 'IND_8SMP', 'E2p1O'+toUmum_tahun+'K13': 'ENG_8SMP', '517'+toBersama+'A1'+tahun: 'IPA_8SMP', '517'+toBersama+'S1'+tahun: 'IPS_8SMP',
                          'M3p1O'+toUmum_tahun+'K13': 'MAT_9SMP', 'I3p1O'+toUmum_tahun+'K13': 'IND_9SMP', 'E3p1O'+toUmum_tahun+'K13': 'ENG_9SMP', '617'+toBersama+'A1'+tahun: 'IPA_9SMP', '617'+toBersama+'S1'+tahun: 'IPS_9SMP',
-                         'M4a1O'+toUmum_tahun+'K13': 'MAT_10_IPA', 'F4a1O'+toUmum_tahun+'K13': 'FIS_10_IPA', 'K4a1O'+toUmum_tahun+'K13': 'KIM_10_IPA', 'B4a1O'+toUmum_tahun+'K13': 'BIO_10_IPA',
-                         'M5a1O'+toUmum_tahun+'K13': 'MAT_11_IPA', 'F5a1O'+toUmum_tahun+'K13': 'FIS_11_IPA', 'K5a1O'+toUmum_tahun+'K13': 'KIM_11_IPA', 'B5a1O'+toUmum_tahun+'K13': 'BIO_11_IPA',
-                         'M4s1O'+toUmum_tahun+'K13': 'MAT_10_IPS', 'I4s1O'+toUmum_tahun+'K13': 'IND_10_IPS', 'E4s1O'+toUmum_tahun+'K13': 'ENG_10_IPS', 'S4s1O'+toUmum_tahun+'K13': 'SEJ_10_IPS', 'G4s1O'+toUmum_tahun+'K13': 'GEO_10_IPS', 'O4s1O'+toUmum_tahun+'K13': 'EKO_10_IPS', 'L4s1O'+toUmum_tahun+'K13': 'SOS_10_IPS',
-                         'M5s1O'+toUmum_tahun+'K13': 'MAT_11_IPS', 'I5s1O'+toUmum_tahun+'K13': 'IND_11_IPS', 'E5s1O'+toUmum_tahun+'K13': 'ENG_11_IPS', 'S5s1O'+toUmum_tahun+'K13': 'SEJ_11_IPS', 'G5s1O'+toUmum_tahun+'K13': 'GEO_11_IPS', 'O5s1O'+toUmum_tahun+'K13': 'EKO_11_IPS', 'L5s1O'+toUmum_tahun+'K13': 'SOS_11_IPS',
+                         'M4a1O'+toBersama_tahun+'K13': 'MAT_10_IPA', 'F4a1O'+toBersama_tahun+'K13': 'FIS_10_IPA', 'K4a1O'+toBersama_tahun+'K13': 'KIM_10_IPA', 'B4a1O'+toBersama_tahun+'K13': 'BIO_10_IPA',
+                         'M5a1O'+toBersama_tahun+'K13': 'MAT_11_IPA', 'F5a1O'+toBersama_tahun+'K13': 'FIS_11_IPA', 'K5a1O'+toBersama_tahun+'K13': 'KIM_11_IPA', 'B5a1O'+toBersama_tahun+'K13': 'BIO_11_IPA',
+                         'M4s1O'+toBersama_tahun+'K13': 'MAT_10_IPS', 'I4s1O'+toBersama_tahun+'K13': 'IND_10_IPS', 'E4s1O'+toBersama_tahun+'K13': 'ENG_10_IPS', 'S4s1O'+toBersama_tahun+'K13': 'SEJ_10_IPS', 'G4s1O'+toBersama_tahun+'K13': 'GEO_10_IPS', 'O4s1O'+toBersama_tahun+'K13': 'EKO_10_IPS', 'L4s1O'+toBersama_tahun+'K13': 'SOS_10_IPS',
+                         'M5s1O'+toBersama_tahun+'K13': 'MAT_11_IPS', 'I5s1O'+toBersama_tahun+'K13': 'IND_11_IPS', 'E5s1O'+toBersama_tahun+'K13': 'ENG_11_IPS', 'S5s1O'+toBersama_tahun+'K13': 'SEJ_11_IPS', 'G5s1O'+toBersama_tahun+'K13': 'GEO_11_IPS', 'O5s1O'+toBersama_tahun+'K13': 'EKO_11_IPS', 'L5s1O'+toBersama_tahun+'K13': 'SOS_11_IPS',
                         #  km
                          'M4d1O'+toUmum_tahun+'KM': 'MAT_4SD', 'I4d1O'+toUmum_tahun+'KM': 'IND_4SD', 'E4d1O'+toUmum_tahun+'KM': 'ENG_4SD', '127'+toBersama+'D1'+tahun: 'IPAS_4SD',
                          'M5d1O'+toUmum_tahun+'KM': 'MAT_5SD', 'I5d1O'+toUmum_tahun+'KM': 'IND_5SD', 'E5d1O'+toUmum_tahun+'KM': 'ENG_5SD', '227'+toBersama+'D1'+tahun: 'IPAS_5SD',
