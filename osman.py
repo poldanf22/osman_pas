@@ -20004,7 +20004,7 @@ if authentication_status:
         with col8:
             PENILAIAN = st.selectbox(
                 "PENILAIAN",
-                ("--Pilih Penilaian--", "SUMATIF TENGAH SEMESTER"))
+                ("--Pilih Penilaian--", "SUMATIF AKHIR SEMESTER"))
 
         col9 = st.container()
 
