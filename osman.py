@@ -3397,13 +3397,13 @@ if authentication_status:
         col1, col2, col3, col4 = st.columns(4)
 
         with col1:
-            EKO = st.selectbox(
-                "JML. SOAL EKO.",
+            GEO = st.selectbox(
+                "JML. SOAL GEO.",
                 (15, 20, 25, 30, 35, 40, 45, 50))
 
         with col2:
-            GEO = st.selectbox(
-                "JML. SOAL GEO.",
+            EKO = st.selectbox(
+                "JML. SOAL EKO.",
                 (15, 20, 25, 30, 35, 40, 45, 50))
 
         with col3:
@@ -3416,8 +3416,8 @@ if authentication_status:
                 "JML. SOAL SOS.",
                 (15, 20, 25, 30, 35, 40, 45, 50))
 
-        JML_SOAL_EKO = EKO
         JML_SOAL_GEO = GEO
+        JML_SOAL_EKO = EKO
         JML_SOAL_SEJ = SEJ
         JML_SOAL_SOS = SOS
 
@@ -3766,9 +3766,9 @@ if authentication_status:
 
             # Jumlah Soal
             ws['F{}'.format(v)] = 'JUMLAH SOAL'
-            ws['G{}'.format(v)] = JML_SOAL_SEJ
-            ws['H{}'.format(v)] = JML_SOAL_GEO
-            ws['I{}'.format(v)] = JML_SOAL_EKO
+            ws['G{}'.format(v)] = JML_SOAL_GEO
+            ws['H{}'.format(v)] = JML_SOAL_EKO
+            ws['I{}'.format(v)] = JML_SOAL_SEJ
             ws['J{}'.format(v)] = JML_SOAL_SOS
 
             # Z Score
@@ -3777,9 +3777,9 @@ if authentication_status:
             ws['D1'] = 'KELAS_A'
             ws['E1'] = 'NAMA SEKOLAH_A'
             ws['F1'] = 'LOKASI_A'
-            ws['G1'] = 'SEJ_A'
-            ws['H1'] = 'GEO_A'
-            ws['I1'] = 'EKO_A'
+            ws['G1'] = 'GEO_A'
+            ws['H1'] = 'EKO_A'
+            ws['I1'] = 'SEJ_A'
             ws['J1'] = 'SOS_A'
             ws['K1'] = 'JML_A'
             ws['L1'] = 'Z_SEJ_A'
@@ -3851,9 +3851,9 @@ if authentication_status:
                 fill_type='solid', start_color='00FF6600', end_color='00FF6600')
 
             # tambahan
-            ws['W1'] = 'SEJ_20_A'
-            ws['X1'] = 'GEO_20_A'
-            ws['Y1'] = 'EKO_20_A'
+            ws['W1'] = 'GEO_20_A'
+            ws['X1'] = 'EKO_20_A'
+            ws['Y1'] = 'SEJ_20_A'
             ws['Z1'] = 'SOS_20_A'
             ws['W1'].font = Font(bold=False, name='Calibri', size=11)
             ws['X1'].font = Font(bold=False, name='Calibri', size=11)
@@ -3910,9 +3910,9 @@ if authentication_status:
             ws['AD1'] = 'KELAS_B'
             ws['AE1'] = 'NAMA SEKOLAH_B'
             ws['AF1'] = 'LOKASI_B'
-            ws['AG1'] = 'SEJ_B'
-            ws['AH1'] = 'GEO_B'
-            ws['AI1'] = 'EKO_B'
+            ws['AG1'] = 'GEO_B'
+            ws['AH1'] = 'EKO_B'
+            ws['AI1'] = 'SEJ_B'
             ws['AJ1'] = 'SOS_B'
             ws['AK1'] = 'JML_B'
             ws['AL1'] = 'Z_SEJ_B'
@@ -3984,9 +3984,9 @@ if authentication_status:
                 fill_type='solid', start_color='31E1F7', end_color='31E1F7')
 
             # tambahan
-            ws['AW1'] = 'SEJ_20'
-            ws['AX1'] = 'GEO_20'
-            ws['AY1'] = 'EKO_20'
+            ws['AW1'] = 'GEO_20'
+            ws['AX1'] = 'EKO_20'
+            ws['AY1'] = 'SEJ_20'
             ws['AZ1'] = 'SOS_20'
             ws['AW1'].font = Font(bold=False, name='Calibri', size=11)
             ws['AX1'].font = Font(bold=False, name='Calibri', size=11)
@@ -4054,9 +4054,9 @@ if authentication_status:
             ws['BD1'] = 'KELAS_C'
             ws['BE1'] = 'NAMA SEKOLAH_C'
             ws['BF1'] = 'LOKASI_C'
-            ws['BG1'] = 'SEJ_C'
-            ws['BH1'] = 'GEO_C'
-            ws['BI1'] = 'EKO_C'
+            ws['BG1'] = 'GEO_C'
+            ws['BH1'] = 'EKO_C'
+            ws['BI1'] = 'SEJ_C'
             ws['BJ1'] = 'SOS_C'
             ws['BK1'] = 'JML_C'
             ws['BL1'] = 'Z_SEJ_C'
@@ -4128,9 +4128,9 @@ if authentication_status:
                 fill_type='solid', start_color='A1C298', end_color='A1C298')
 
             # tambahan
-            ws['BW1'] = 'SEJ_20_C'
-            ws['BX1'] = 'GEO_20_C'
-            ws['BY1'] = 'EKO_20_C'
+            ws['BW1'] = 'GEO_20_C'
+            ws['BX1'] = 'EKO_20_C'
+            ws['BY1'] = 'SEJ_20_C'
             ws['BZ1'] = 'SOS_20_C'
             ws['BW1'].font = Font(bold=False, name='Calibri', size=11)
             ws['BX1'].font = Font(bold=False, name='Calibri', size=11)
@@ -4203,9 +4203,9 @@ if authentication_status:
             ws['CD1'] = 'KELAS_D'
             ws['CE1'] = 'NAMA SEKOLAH_D'
             ws['CF1'] = 'LOKASI_D'
-            ws['CG1'] = 'SEJ_D'
-            ws['CH1'] = 'GEO_D'
-            ws['CI1'] = 'EKO_D'
+            ws['CG1'] = 'GEO_D'
+            ws['CH1'] = 'EKO_D'
+            ws['CI1'] = 'SEJ_D'
             ws['CJ1'] = 'SOS_D'
             ws['CK1'] = 'JML_D'
             ws['CL1'] = 'Z_SEJ_D'
@@ -4277,9 +4277,9 @@ if authentication_status:
                 fill_type='solid', start_color='FFE9A0', end_color='FFE9A0')
 
             # tambahan
-            ws['CW1'] = 'SEJ_20_D'
-            ws['CX1'] = 'GEO_20_D'
-            ws['CY1'] = 'EKO_20_D'
+            ws['CW1'] = 'GEO_20_D'
+            ws['CX1'] = 'EKO_20_D'
+            ws['CY1'] = 'SEJ_20_D'
             ws['CZ1'] = 'SOS_20_D'
             ws['CW1'].font = Font(bold=False, name='Calibri', size=11)
             ws['CX1'].font = Font(bold=False, name='Calibri', size=11)
@@ -4351,9 +4351,9 @@ if authentication_status:
             ws['DD1'] = 'KELAS_E'
             ws['DE1'] = 'NAMA SEKOLAH_E'
             ws['DF1'] = 'LOKASI_E'
-            ws['DG1'] = 'SEJ_E'
-            ws['DH1'] = 'GEO_E'
-            ws['DI1'] = 'EKO_E'
+            ws['DG1'] = 'GEO_E'
+            ws['DH1'] = 'EKO_E'
+            ws['DI1'] = 'SEJ_E'
             ws['DJ1'] = 'SOS_E'
             ws['DK1'] = 'JML_E'
             ws['DL1'] = 'Z_SEJ_E'
@@ -4425,9 +4425,9 @@ if authentication_status:
                 fill_type='solid', start_color='ECC5FB', end_color='ECC5FB')
 
             # tambahan
-            ws['DW1'] = 'SEJ_20'
-            ws['DX1'] = 'GEO_20'
-            ws['DY1'] = 'EKO_20'
+            ws['DW1'] = 'GEO_20'
+            ws['DX1'] = 'EKO_20'
+            ws['DY1'] = 'SEJ_20'
             ws['DZ1'] = 'SOS_20'
             ws['DW1'].font = Font(bold=False, name='Calibri', size=11)
             ws['DX1'].font = Font(bold=False, name='Calibri', size=11)
@@ -4500,9 +4500,9 @@ if authentication_status:
             ws['ED1'] = 'KELAS'
             ws['EE1'] = 'NAMA SEKOLAH'
             ws['EF1'] = 'LOKASI'
-            ws['EG1'] = 'SEJ'
-            ws['EH1'] = 'GEO'
-            ws['EI1'] = 'EKO'
+            ws['EG1'] = 'GEO'
+            ws['EH1'] = 'EKO'
+            ws['EI1'] = 'SEJ'
             ws['EJ1'] = 'SOS'
             ws['EK1'] = 'JML'
             ws['EL1'] = 'Z_SEJ'
@@ -4574,9 +4574,9 @@ if authentication_status:
                 fill_type='solid', start_color='E1FFEE', end_color='E1FFEE')
 
             # tambahan
-            ws['EW1'] = 'SEJ_20'
-            ws['EX1'] = 'GEO_20'
-            ws['EY1'] = 'EKO_20'
+            ws['EW1'] = 'GEO_20'
+            ws['EX1'] = 'EKO_20'
+            ws['EY1'] = 'SEJ_20'
             ws['EZ1'] = 'SOS_20'
             ws['EW1'].font = Font(bold=False, name='Calibri', size=11)
             ws['EX1'].font = Font(bold=False, name='Calibri', size=11)
